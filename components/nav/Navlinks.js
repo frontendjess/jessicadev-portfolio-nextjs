@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const H1 = styled.h1`
+const Navlinks = styled.div`
 	font-family: 'Roboto';
 `;
 
-export default H1;
+export default Navlinks;

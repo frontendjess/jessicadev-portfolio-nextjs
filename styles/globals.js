@@ -6,6 +6,17 @@ const GlobalStyle = createGlobalStyle`
         background: #ff6699;
     }
 
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto';
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+
     
     ${media.greaterThan('small')`
     html {
