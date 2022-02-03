@@ -9,7 +9,7 @@ import Heading from '../components/heading/Heading';
 import Body from '../components/body/Body';
 import Header from '../components/header/Header';
 import Hero from '../components/hero/Hero';
-import Navlinks from '../components/nav/Navlinks';
+import Navbar from '../components/nav/Navbar';
 import Main from '../components/main/Main';
 import Footer from '../components/footer/Footer';
 
@@ -30,12 +30,7 @@ export default function Home() {
 
 			<Body>
 				<Header>
-					<Heading>JESSICA.DEV</Heading>
-					<Navlinks>
-						<a href=''>About</a>
-						<a href=''>Portfolio</a>
-						<a href=''>Contact</a>
-					</Navlinks>
+					<Navbar />
 				</Header>
 				<Main>
 					Main section

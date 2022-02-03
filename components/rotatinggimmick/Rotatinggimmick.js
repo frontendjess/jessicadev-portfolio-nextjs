@@ -27,7 +27,7 @@ const Container = styled.div`
 const OuterCircle = styled.div`
 	width: 100%;
 	height: 100%;
-	animation: ${rotate} 7s linear infinite;
+	animation: ${rotate} 10s linear infinite;
 	img {
 		width: 100%;
 	}

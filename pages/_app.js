@@ -1,4 +1,3 @@
-import '../styles/globals.css';
 import GlobalStyle from '../styles/globals';
 import Head from 'next/head';
 
