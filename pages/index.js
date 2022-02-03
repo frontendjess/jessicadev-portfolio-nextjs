@@ -8,6 +8,7 @@ import Heading from '../components/heading/Heading';
 
 import Body from '../components/body/Body';
 import Header from '../components/header/Header';
+import Hero from '../components/hero/Hero';
 import Navlinks from '../components/nav/Navlinks';
 import Main from '../components/main/Main';
 import Footer from '../components/footer/Footer';
@@ -36,7 +37,10 @@ export default function Home() {
 						<a href=''>Contact</a>
 					</Navlinks>
 				</Header>
-				<Main>Main section</Main>
+				<Main>
+					Main section
+					<Hero></Hero>
+				</Main>
 				<Footer>Footer section</Footer>
 			</Body>
 		</>
