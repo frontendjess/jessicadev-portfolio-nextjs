@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 import RotatingGimmick from './../rotatinggimmick/Rotatinggimmick';
+import media from 'styled-media-query';
 
 const HeroTitle = styled.h1`
 	font-family: var(--font-headings);
 	font-size: var(--font-size-jumbo);
 	text-transform: uppercase;
-	letter-spacing: var(--letter-spacing-jumbo);
+	letter-spacing: var(--letter-spacing-huge);
 	text-shadow: 3px 3px 3px var(--color-tertiary);
 
 	position: relative;
 	text-align: right;
+
+	${media.lessThan('large')`
+		font-size: var(--font-size-huge);
+	`}
 `;
 
 const HeroSubTitle = styled.h5`

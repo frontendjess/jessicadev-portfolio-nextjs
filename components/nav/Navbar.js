@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Navlinks from './Navlinks';
 import Logo from './Logo';
 
 const NavLink = styled.div`
@@ -15,6 +14,15 @@ const NavLink = styled.div`
 	}
 `;
 
+const Navlinks = styled.div`
+	font-family: var(--font-headings);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+`;
+
 const Navbar = () => {
 	return (
 		<>
@@ -28,10 +36,12 @@ const Navbar = () => {
 				</NavLink>
 				<NavLink>
 					{' '}
-					<a href='#portfolio'>Portfolio</a>
+					<a href='#portfolio'>Works</a>
 				</NavLink>
 				<NavLink>
-					<a href='mailto:hello@jessicadev.com'>Contact Me</a>
+					<a href='mailto:hello@jessicadev.com'>
+						<img className='navbar-email-icon' src='../images/email.png' />
+					</a>
 				</NavLink>
 			</Navlinks>
 		</>

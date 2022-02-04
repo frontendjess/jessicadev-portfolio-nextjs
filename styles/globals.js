@@ -24,7 +24,13 @@ const GlobalStyle = createGlobalStyle`
         --letter-spacing-size: 0.1rem;
         --letter-spacing-md: 0.15rem;
         --letter-spacing-lg: 0.225rem;
+        --letter-spacing-huge: 0.759rem;
         --letter-spacing-jumbo: 1.139rem;
+
+        /* LINE HEIGHT */
+        --line-height-size: 25.6px;
+        --line-height-md: 38.4px;
+        --line-height-lg: 57.6px;
 
         /* FONT WEIGHT */
         --font-weight-reg: 400;
@@ -98,6 +104,9 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-secondary);
     }
 
+    .navbar-email-icon {
+
+    }
     
 `;
 
