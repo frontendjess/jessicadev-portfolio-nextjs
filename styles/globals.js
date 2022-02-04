@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     :root {
         --font-body: 'Roboto', sans-serif;
         --font-headings: 'Roboto', sans-serif;
+        --font-secondary-headings: 'brittanysignature', cursive;
 
         /* FONT SIZES */
         --font-size-base: 16px;
@@ -18,6 +19,16 @@ const GlobalStyle = createGlobalStyle`
         --font-size-xxl: 5.068rem;
         --font-size-huge: 7.594rem;
         --font-size-jumbo: 11.391rem;
+
+        /* LETTER SPACING */
+        --letter-spacing-size: 0.1rem;
+        --letter-spacing-md: 0.15rem;
+        --letter-spacing-lg: 0.225rem;
+        --letter-spacing-jumbo: 1.139rem;
+
+        /* FONT WEIGHT */
+        --font-weight-reg: 400;
+        --font-weight-bold: 700;
 
         /* SPACING */
         --size-xxs: 4px;
@@ -39,6 +50,14 @@ const GlobalStyle = createGlobalStyle`
         --color-tertiary: #787878;
     }
 
+    @font-face {
+        font-family: 'brittanysignature';
+        src: url('../fonts/brittanysignature-webfont.woff2') format('woff2'),
+             url('../fonts/brittanysignature-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
     *,
     *::before,
     *::after {
@@ -47,10 +66,15 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+  
     html,
     body {
         font-size: 16px;
         font-family: 'Roboto',
+
+    }
+
+    body {
         overflow-x: hidden;
     }
 
@@ -62,6 +86,16 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto',
         text-decoration: none;
         color: #121212;
+    }
+
+    p {
+        font-family: var(--font-body);
+        font-size: var(--font-size);
+        letter-spacing: var(--letter-spacing-size);
+    }
+
+    .secondary-text-color {
+        color: var(--color-secondary);
     }
 
     

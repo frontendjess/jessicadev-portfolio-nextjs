@@ -3,7 +3,7 @@ import Navlinks from './Navlinks';
 import Logo from './Logo';
 
 const NavLink = styled.div`
-	padding: 0 25px;
+	padding: 0 0 0 50px;
 
 	a {
 		text-decoration: none;

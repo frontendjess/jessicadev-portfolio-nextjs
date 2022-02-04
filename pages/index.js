@@ -33,7 +33,6 @@ export default function Home() {
 					<Navbar />
 				</Header>
 				<Main>
-					Main section
 					<Hero></Hero>
 				</Main>
 				<Footer>Footer section</Footer>

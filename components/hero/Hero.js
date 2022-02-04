@@ -1,18 +1,15 @@
-import React from 'react';
 import RotatingGimmick from '../rotatinggimmick/Rotatinggimmick';
 import HeroContainer from './HeroContainer';
-import HeroText from './HeroText';
-import HeroTitle from './HeroTitle';
+import HeroTextContainer from './HeroTextContainer';
+import HeroTitleContainer from './HeroTitleContainer';
 
 function Hero() {
 	return (
 		<>
 			<HeroContainer>
-				<HeroText></HeroText>
-				<HeroTitle></HeroTitle>
+				<HeroTextContainer></HeroTextContainer>
+				<HeroTitleContainer></HeroTitleContainer>
 			</HeroContainer>
-
-			<RotatingGimmick></RotatingGimmick>
 		</>
 	);
 }

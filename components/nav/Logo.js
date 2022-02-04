@@ -4,7 +4,7 @@ const LogoImg = styled.div`
 	max-width: 75%;
 	min-width: 185px;
 	width: 100%;
-	padding: 1rem 1rem;
+	padding: 1rem 1rem 1rem 0;
 
 	img {
 		width: 100%;
