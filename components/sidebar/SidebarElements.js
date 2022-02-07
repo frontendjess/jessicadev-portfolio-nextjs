@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import media from 'styled-media-query';
 
 const SidebarContainer = styled.aside`
 	position: fixed;
@@ -13,8 +14,8 @@ const SidebarContainer = styled.aside`
 	top: 0;
 	left: 0;
 	transition: 0.3s ease-in-out;
-	// opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-	// top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+	opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+	top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 const CloseIcon = () => {
@@ -37,6 +38,17 @@ const Icon = styled.div`
 
 const SidebarWrapper = styled.div`
 	color: var(--color-black);
+`;
+
+const SidebarMenu = styled.ul`
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 80px);
+	text-align: center;
+
+	${media.lessThan('small')`
+        grid-template-rows: repeat(6, 60px);
+    `};
 `;
 
 const SidebarLink = styled.li`
@@ -65,9 +77,7 @@ const SidebarLink = styled.li`
 		}
 	}
 `;
-const SidebarMenu = styled.div`
-	color: black;
-`;
+
 export {
 	SidebarContainer,
 	CloseIcon,

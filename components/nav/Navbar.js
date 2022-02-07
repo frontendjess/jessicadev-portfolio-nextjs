@@ -66,7 +66,7 @@ const MobileIcon = styled.div`
 	`}
 `;
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
 	return (
 		<>
 			<div>
@@ -79,7 +79,7 @@ const Navbar = () => {
 					</Link>
 				</Logo>
 			</div>
-			<MobileIcon>
+			<MobileIcon onClick={toggle}>
 				<FaBarsIcon />
 			</MobileIcon>
 			<Navlinks>

@@ -113,7 +113,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .times-icon {
-        color: var(--color-secondary);
+        color: var(--color-black);
     }
 
     .nav-link {
