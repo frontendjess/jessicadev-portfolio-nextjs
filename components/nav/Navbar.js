@@ -28,6 +28,15 @@ const NavLink = styled.li`
 		text-transform: uppercase;
 		font-size: 18px;
 		letter-spacing: 1.8px;
+
+		&:hover {
+			color: var(--color-white);
+			background-color: var(--color-black);
+		}
+
+		&.active {
+			border-bottom: 3px solid var(--color-secondary);
+		}
 	}
 `;
 
@@ -75,24 +84,24 @@ const Navbar = () => {
 			</MobileIcon>
 			<Navlinks>
 				<NavLink>
-					<Link href='#Header'>
+					<Link className='nav-link' href='#Header'>
 						<a>Home</a>
 					</Link>
 				</NavLink>
 				<NavLink>
-					<Link href='#About'>
+					<Link className='nav-link' href='#About'>
 						<a>About</a>
 					</Link>
 				</NavLink>
 				<NavLink>
-					<Link href='#Portfolio'>
+					<Link className='nav-link' href='#Portfolio'>
 						<a>Works</a>
 					</Link>
 				</NavLink>
 				<NavLink>
-					<a href='mailto:hello@jessicadev.com'>
+					<Link className='nav-link' href='mailto:hello@jessicadev.com'>
 						<img className='navbar-email-icon' src='../images/email.png' />
-					</a>
+					</Link>
 				</NavLink>
 			</Navlinks>
 		</>

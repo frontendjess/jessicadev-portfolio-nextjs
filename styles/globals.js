@@ -105,7 +105,19 @@ const GlobalStyle = createGlobalStyle`
     }
 
     .navbar-email-icon {
+        &:hover {
+            background-color: var(--color-black);
+            padding-bottom: 0.5rem;
+            cursor: pointer;
+        }
+    }
 
+    .times-icon {
+        color: var(--color-secondary);
+    }
+
+    .nav-link {
+            
     }
     
 `;
