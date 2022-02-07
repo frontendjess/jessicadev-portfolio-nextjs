@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 import Heading from '../components/heading/Heading';
 
+import About from '../components/about/About';
 import Body from '../components/body/Body';
 import Header from '../components/header/Header';
 import Hero from '../components/hero/Hero';
@@ -30,14 +31,15 @@ export default function Home() {
 			</Head>
 
 			<Body>
-				<Header>
+				<Header id='Header'>
 					<Navbar />
 				</Header>
 				<Main>
-					<Hero></Hero>
-					<RecentWork></RecentWork>
+					<Hero />
+					<RecentWork />
+					<About id='About' />
 				</Main>
-				<Footer>Footer section</Footer>
+				<Footer id='Footer'>Footer section</Footer>
 			</Body>
 		</>
 	);

@@ -11,6 +11,7 @@ const HeroContainer = styled.div`
 
 	${media.lessThan('large')`
 		flex-wrap: wrap;
+		height: calc(100vh - 191px);
 	`}
 `;
 

@@ -12,8 +12,12 @@ const HeroTitle = styled.h1`
 	position: relative;
 	text-align: right;
 
-	${media.lessThan('large')`
+	${media.between('medium', 'large')`
 		font-size: var(--font-size-huge);
+	`}
+
+	${media.lessThan('medium')`
+		font-size: var(--font-size-xl);
 	`}
 `;
 
