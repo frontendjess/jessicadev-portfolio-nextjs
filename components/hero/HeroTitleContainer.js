@@ -27,6 +27,15 @@ const HeroSubTitle = styled.h5`
 	text-transform: uppercase;
 	letter-spacing: var(--letter-spacing-md);
 	text-align: right;
+
+	${media.lessThan('medium')`
+	padding-top: 25px;
+	`}
+
+	${media.lessThan('small')`
+		font-size: var(--font-size-sm);
+		letter-spacing: var(--letter-spacing-sm);
+	`}
 `;
 
 const Wrapper = styled.div`

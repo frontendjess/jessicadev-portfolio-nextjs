@@ -1,9 +1,16 @@
 import styled from 'styled-components';
+import { WorkWithMe } from './FooterElements';
 
-const Footer = styled.div`
+const FooterContainer = styled.footer`
 	width: 100%;
-	height: 150px;
-	background-color: pink;
 `;
+
+const Footer = () => {
+	return (
+		<FooterContainer>
+			<WorkWithMe></WorkWithMe>
+		</FooterContainer>
+	);
+};
 
 export default Footer;

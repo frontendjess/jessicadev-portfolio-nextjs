@@ -6,7 +6,7 @@ import HeroTitleContainer from './HeroTitleContainer';
 function Hero() {
 	return (
 		<>
-			<HeroContainer>
+			<HeroContainer id='Header'>
 				<HeroTextContainer></HeroTextContainer>
 				<HeroTitleContainer></HeroTitleContainer>
 			</HeroContainer>

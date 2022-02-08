@@ -4,7 +4,7 @@ import media from 'styled-media-query';
 const Header = styled.div`
 	width: 100%;
 	flex: 0 0 78px;
-	background-color: white;
+	background-color: transparent;
 	display: flex;
 	flex-direction: row;
 	wrap: no-wrap;

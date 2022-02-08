@@ -46,7 +46,9 @@ const HeroTextContainer = () => {
 					</span>
 				)}
 			</HeroText>
-			<p onClick={() => setIsOpen(!isOpen)}>TELL ME MORE</p>
+			<p className='tell-me-more' onClick={() => setIsOpen(!isOpen)}>
+				&#123; TELL ME MORE &#125;
+			</p>
 		</Wrapper>
 	);
 };

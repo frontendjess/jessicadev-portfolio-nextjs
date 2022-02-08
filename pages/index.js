@@ -34,7 +34,7 @@ export default function Home() {
 			</Head>
 
 			<Body>
-				<Header id='Header'>
+				<Header>
 					<Sidebar isOpen={isOpen} toggle={toggle} />
 					<Navbar toggle={toggle} />
 				</Header>
