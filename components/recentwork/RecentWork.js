@@ -2,10 +2,6 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import media from 'styled-media-query';
 
-const Filler = styled.div`
-	height: 1000px;
-`;
-
 const RecentWorkTitle = () => {
 	return <p>SELECTED MOST RECENT WORK</p>;
 };
@@ -20,7 +16,7 @@ const Section = styled.section`
 	padding: 100px 0;
 
 	${media.lessThan('large')`
-		padding: 200px 0;
+		padding: 200px 0 100px 0;
 	`}
 `;
 
@@ -45,12 +41,18 @@ const RecentWork = () => {
 
 				<div className='inner-content-padding-btm projects-row'>
 					<div className='projects-col'>
-						<div>
-							<a href=''>View all works and projects</a>
+						<div className='inner-content-padding-btm'>
+							<a className='projects-text-link-secondary' href=''>
+								View all works and projects
+							</a>
 						</div>
 
 						<div>
-							<a href='mailto:hello@jessicadev.com'>Or get in touch with me.</a>
+							<a
+								className='projects-text-link'
+								href='mailto:hello@jessicadev.com'>
+								Or get in touch with me
+							</a>
 						</div>
 					</div>
 					<div className='projects-col projects-col-star'>
@@ -58,7 +60,6 @@ const RecentWork = () => {
 					</div>
 				</div>
 			</Section>
-			<Filler />
 		</>
 	);
 };

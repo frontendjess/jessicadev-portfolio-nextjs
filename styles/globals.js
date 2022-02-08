@@ -131,6 +131,10 @@ const GlobalStyle = createGlobalStyle`
         padding-bottom: 50px;
     }
 
+    .inner-content-padding-sm-btm {
+        padding-bottom: 25px;
+    }
+
     .secondary-text-color {
         color: var(--color-secondary);
     }
@@ -164,6 +168,28 @@ const GlobalStyle = createGlobalStyle`
         &:hover {
             background-color: var(--color-black);
             color: var(--color-white);
+        }
+    }
+
+    .projects-text-link {
+        font-size: var(--h5-size);
+        letter-spacing: var(--letter-spacing-md);
+        
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-black);
+        }
+    }
+
+    .projects-text-link-secondary {
+        font-size: var(--h3-size);
+        letter-spacing: var(--letter-spacing-lg);
+        color: var(--color-secondary);
+    
+        
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-black);
         }
     }
 

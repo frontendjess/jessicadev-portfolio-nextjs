@@ -25,6 +25,18 @@ const WorkWithMe = () => {
 						<span className='marquee-font'> WORK WITH ME </span>
 						<img src='../images/star.png' alt='star' />
 					</div>
+					<div className='marquee-title'>
+						<span className='marquee-font'> WORK WITH ME </span>
+						<img src='../images/star.png' alt='star' />
+					</div>
+					<div className='marquee-title'>
+						<span className='marquee-font'> WORK WITH ME </span>
+						<img src='../images/star.png' alt='star' />
+					</div>
+					<div className='marquee-title'>
+						<span className='marquee-font'> WORK WITH ME </span>
+						<img src='../images/star.png' alt='star' />
+					</div>
 				</div>
 			</h3>
 		</div>
