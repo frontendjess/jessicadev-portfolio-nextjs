@@ -5,6 +5,7 @@ const AboutMeContainer = styled.div`
 	height: 100vh;
 	background: url(../images/jessica.png) right/cover no-repeat;
 	background-size: cover;
+	position: relative;
 `;
 
 const AboutMeTextContainer = styled.div`
@@ -13,15 +14,18 @@ const AboutMeTextContainer = styled.div`
 	justify-content: flex-start;
 	align-items: center;
 	border: solid 1px red;
+	position: absolute;
+	top: -75px;
 `;
 
 const AboutMeDreamBigText = styled.div`
 	border: solid 1px blue;
 	font-size: 81px;
-	width: 30vw;
+	flex: 2 1 300px;
 `;
 const AboutMeInspoText = styled.div`
 	border: solid 1px blue;
+	flex: 1 1 150px;
 `;
 
 const About = () => {
