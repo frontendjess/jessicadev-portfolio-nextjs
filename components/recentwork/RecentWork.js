@@ -28,19 +28,56 @@ const RecentWork = () => {
 				<div className='inner-content-padding'>
 					<RecentWorkDetails>
 						<img
-							src='../images/selectedproject-restaurant.png'
-							alt='restaurant project mockups'
+							className='mockup-image'
+							src='../images/restaurant-mockup.png'
+							alt='client work mockup'
 						/>
 
-						<a className='project-link' href=''>
-							<span className='project-type-text'>[ Design ]</span> Project
-							title
+						<a className='project-link' href='restaurantdesign'>
+							01. <span className='project-type-text'>[ Design ]</span>{' '}
+							Restaurant Design Project
+						</a>
+					</RecentWorkDetails>
+				</div>
+
+				<div className='inner-content-padding'>
+					<RecentWorkDetails>
+						<img
+							className='mockup-image'
+							src='../images/tgp-mockup.png'
+							alt='Client work mockup'
+						/>
+
+						<a className='project-link' href='thegardenparty'>
+							02. <span className='project-type-text'>[ Design + dev]</span> The
+							Garden Party - Designs & Productions Studio Website
+						</a>
+					</RecentWorkDetails>
+				</div>
+
+				<div className='inner-content-padding'>
+					<RecentWorkDetails>
+						<img
+							className='mockup-image'
+							src='../images/interiorshop-mockup.png'
+							alt='Ecommerce work mockup'
+						/>
+
+						<a className='project-link' href='interiorshop'>
+							03.{' '}
+							<span className='project-type-text'>
+								[ Design + dev + branding ]
+							</span>{' '}
+							E-commerce Interior Webshop
 						</a>
 					</RecentWorkDetails>
 				</div>
 
 				<div className='inner-content-padding-btm projects-row'>
 					<div className='projects-col'>
+						<div className='inner-content-padding-btm'>
+							<p>WANT TO SEE MORE?</p>
+						</div>
 						<div className='inner-content-padding-btm'>
 							<a className='projects-text-link-secondary' href=''>
 								View all works and projects

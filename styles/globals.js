@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
         --letter-spacing-size: 0.1rem;
         --letter-spacing-md: 0.15rem;
         --letter-spacing-lg: 0.225rem;
+        --letter-spacing-xl: 0.337rem;
         --letter-spacing-xxl: 0.506rem;
         --letter-spacing-huge: 0.759rem;
         --letter-spacing-jumbo: 1.139rem;
@@ -33,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
         --line-height-size: 25.6px;
         --line-height-md: 38.4px;
         --line-height-lg: 57.6px;
+        --line-height-xl: 86.4px;
 
         /* FONT WEIGHT */
         --font-weight-reg: 400;
@@ -110,7 +112,12 @@ const GlobalStyle = createGlobalStyle`
         font-family: var(--font-headings);
         text-decoration: none;
         color: var(--color-black);
-        text-transform: uppercase;
+        font-weight: var(--font-weight-bold);
+
+        &:hover {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        }
     }
 
     p {
@@ -214,6 +221,8 @@ const GlobalStyle = createGlobalStyle`
     .projects-col-star {
         padding-right: 100px;
     }
+
+ 
 
     /* MARQUEE */
     
