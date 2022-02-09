@@ -49,7 +49,7 @@ const RecentWork = () => {
 						/>
 
 						<a className='project-link' href='thegardenparty'>
-							02. <span className='project-type-text'>[ Design + dev]</span> The
+							02. <span className='project-type-text'>[ Design + Dev]</span> The
 							Garden Party - Designs & Productions Studio Website
 						</a>
 					</RecentWorkDetails>
@@ -66,7 +66,7 @@ const RecentWork = () => {
 						<a className='project-link' href='interiorshop'>
 							03.{' '}
 							<span className='project-type-text'>
-								[ Design + dev + branding ]
+								[ Design + Dev + Branding ]
 							</span>{' '}
 							E-commerce Interior Webshop
 						</a>

@@ -1,5 +1,3 @@
-import styled from 'styled-components';
-import media from 'styled-media-query';
 import Link from 'next/link';
 import {
 	AboutMeDreamBigContainer,
@@ -7,66 +5,11 @@ import {
 	AboutMeDreamBigText,
 	AboutMeInspoText,
 	PinkStar,
+	AboutMeContainer,
+	AboutMeRow,
+	AboutMeTitle,
+	AboutMeText,
 } from './AboutElements';
-
-const AboutMeContainer = styled.div`
-	width: 100%:
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-
-	${media.greaterThan('large')`
-		padding-top: 125px;
-	`}
-
-	${media.between('medium', '956px')`
-		padding-top: 330px;
-	`}
-
-	${media.between('957px', '981px')`
-		padding-top: 200px;
-	`}
-
-	${media.between('982px', '1097px')`
-		padding-top: 100px;
-	`}
-`;
-
-const AboutMeRow = styled.div`
-	display: flex;
-	flex-direction: row;
-	padding: 100px 0 0 0;
-
-	${media.lessThan('large')`
-		flex-direction: column;
-	`}
-`;
-
-const AboutMeTitle = styled.div`
-	flex: 1 1 50%;
-	padding-right: 50px;
-
-	h3 {
-		font-family: var(--font-headings);
-		font-size: var(--h3-size);
-		text-transform: uppercase;
-		line-height: var(--line-height-xl);
-		letter-spacing: var(--letter-spacing-xl);
-	}
-`;
-
-const AboutMeText = styled.div`
-	flex: 0 1 50%;
-
-	h5 {
-		font-family: var(--font-headings);
-		font-size: var(--h5-size);
-		text-transform: uppercase;
-		line-height: var(--line-height-md);
-		letter-spacing: var(--letter-spacing-md);
-	}
-`;
 
 const About = () => {
 	return (
@@ -95,15 +38,20 @@ const About = () => {
 					</AboutMeTitle>
 					<AboutMeText>
 						<h5 className='inner-content-padding-sm-btm'>
-							My passion is creating modern and beautiful solutions that
-							optimizes the user experience and establishing an impactful online
-							presence.
+							My <span className='secondary-text-color'>passion</span> is
+							creating modern and beautiful solutions that optimizes the{' '}
+							<span className='secondary-text-color'>user experience</span> and
+							establishing an impactful{' '}
+							<span className='tertiary-text-color'>online presence</span>.
 						</h5>
 
 						<p className='inner-content-padding-sm-btm'>
 							Based in Oslo, I am a front end developer with a strong suit for
-							creativity with an entrepreneurial and marketing mindset - this is
-							when you go to school for business but end up as a developer.
+							creativity with an entrepreneurial and marketing mindset -{' '}
+							<span className='italic'>
+								this is when you go to school for business but end up as a
+								developer.
+							</span>
 						</p>
 						<p className='inner-content-padding-sm-btm'>
 							I am currently on my last semester of my 2 year front-end
@@ -118,7 +66,7 @@ const About = () => {
 						<p className='inner-content-padding-sm-btm'>
 							On my free time, you can catch me trying to teach my toddler yoga
 							and patience, working on a couple side projects, learning a new
-							framework, reading autobiographis of inspirational women and
+							framework, reading autobiographies of inspirational women and
 							basking in any sunlight the Norwegian weather will grant us.
 						</p>
 					</AboutMeText>

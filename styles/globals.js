@@ -127,8 +127,20 @@ const GlobalStyle = createGlobalStyle`
         line-height: var(--line-height-size);
     }
 
+    .bold {
+        font-weight: var(--font-weight-bold);
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
     .section {
         padding: 100px 0;
+    }
+
+    .section-padding-top {
+        padding-top: 100px;
     }
 
     .inner-content-padding {
@@ -147,6 +159,10 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-secondary);
     }
 
+    .tertiary-text-color {
+        color: var(--color-tertiary);
+    }
+    
     .navbar-email-icon {
         &:hover {
             background-color: var(--color-black);

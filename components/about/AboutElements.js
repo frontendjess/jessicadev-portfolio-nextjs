@@ -88,10 +88,73 @@ const PinkStar = styled.div`
 	`}
 `;
 
+const AboutMeContainer = styled.div`
+	width: 100%:
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	${media.greaterThan('large')`
+		padding-top: 125px;
+	`}
+
+	${media.between('medium', '956px')`
+		padding-top: 330px;
+	`}
+
+	${media.between('957px', '981px')`
+		padding-top: 200px;
+	`}
+
+	${media.between('982px', '1097px')`
+		padding-top: 100px;
+	`}
+`;
+
+const AboutMeRow = styled.div`
+	display: flex;
+	flex-direction: row;
+	padding: 100px 0 0 0;
+
+	${media.lessThan('large')`
+		flex-direction: column;
+	`}
+`;
+
+const AboutMeTitle = styled.div`
+	flex: 1 1 50%;
+	padding-right: 50px;
+
+	h3 {
+		font-family: var(--font-headings);
+		font-size: var(--h3-size);
+		text-transform: uppercase;
+		line-height: var(--line-height-xl);
+		letter-spacing: var(--letter-spacing-xl);
+	}
+`;
+
+const AboutMeText = styled.div`
+	flex: 0 1 50%;
+
+	h5 {
+		font-family: var(--font-headings);
+		font-size: var(--h5-size);
+		text-transform: uppercase;
+		line-height: var(--line-height-md);
+		letter-spacing: var(--letter-spacing-md);
+	}
+`;
+
 export {
 	AboutMeDreamBigContainer,
 	AboutMeTextContainer,
 	AboutMeDreamBigText,
 	AboutMeInspoText,
 	PinkStar,
+	AboutMeContainer,
+	AboutMeRow,
+	AboutMeTitle,
+	AboutMeText,
 };
