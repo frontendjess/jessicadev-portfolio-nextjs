@@ -47,7 +47,7 @@ const RecentWork = () => {
 							</a>
 						</div>
 
-						<div>
+						<div className='inner-content-padding-btm'>
 							<a
 								className='projects-text-link'
 								href='mailto:hello@jessicadev.com'>

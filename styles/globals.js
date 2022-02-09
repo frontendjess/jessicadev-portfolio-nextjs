@@ -117,6 +117,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: var(--font-body);
         font-size: var(--font-size);
         letter-spacing: var(--letter-spacing-size);
+        line-height: var(--line-height-size);
     }
 
     .section {
@@ -206,7 +207,7 @@ const GlobalStyle = createGlobalStyle`
 
     .projects-row {
         display: flex;
-
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
