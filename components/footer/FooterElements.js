@@ -20,6 +20,10 @@ const BuildMagicTogetherText = styled.h3`
 const IconArrow = styled.div`
 	display: flex;
 	justify-content: center;
+
+	${media.lessThan('medium')`
+		padding-left: 40px;
+	`}
 `;
 
 const BuildMagicTogether = () => {
@@ -59,7 +63,7 @@ const FooterCol = styled.div`
 	}
 `;
 
-const FooterAboutText = styled.p`
+const FooterAboutText = styled.div`
 	text-align: right;
 
 	${media.lessThan('medium')`
@@ -107,8 +111,8 @@ const FooterCTA = () => {
 				</FooterCol>
 				<FooterCol>
 					<FooterAboutText>
-						Like what you see?
-						<br /> I designed my portfolio and built it on React & Next.js
+						<p className='italic'>Like what you see?</p>
+						<p>I designed my portfolio and built it on React & Next.js</p>
 					</FooterAboutText>
 				</FooterCol>
 			</FooterRow>
