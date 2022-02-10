@@ -4,8 +4,6 @@ import styles from '../../styles/Home.module.css';
 
 import styled from 'styled-components';
 
-import Heading from '../../components/heading/Heading';
-
 import About from '../../components/about/About';
 import Body from '../../components/body/Body';
 import Header from '../../components/header/Header';
@@ -41,8 +39,8 @@ export default function Project({ projectData }) {
 					<Sidebar isOpen={isOpen} toggle={toggle} />
 					<Navbar toggle={toggle} />
 				</Header>
-				<Main>this is my project</Main>
-				<Footer id='Footer'>Footer section</Footer>
+				<Main id='Topofpage'>this is my project</Main>
+				<Footer id='Footer'></Footer>
 			</Body>
 		</>
 	);

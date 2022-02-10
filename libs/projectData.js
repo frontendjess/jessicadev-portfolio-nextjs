@@ -1,11 +1,11 @@
 const listOfProjects = [
 	{
 		pid: '1',
-		title: 'Project title 1',
-		companyname: 'Company name 1',
-		projecttype: 'Project type 1',
-		techstack: ['HTML', 'CSS'],
-		featuredImage: '/images/project1.png',
+		title: 'Restaurant Website Design',
+		companyname: 'Freelance project',
+		projecttype: 'Design',
+		techstack: ['Design prototype on Figma'],
+		featuredImage: '/images/featuredproject1.png',
 		gallery: [
 			{
 				link: '/images/project1about1.png',
@@ -23,11 +23,11 @@ const listOfProjects = [
 	},
 	{
 		pid: '2',
-		title: 'Project title 2',
-		companyname: 'Company name 2',
-		projecttype: 'Project type 2',
-		techstack: ['HTML', 'CSS', 'JS'],
-		featuredImage: '/images/project1.png',
+		title: 'Design & Productions Studio Website',
+		companyname: 'The Garden Party AS',
+		projecttype: 'Design + Development',
+		techstack: ['Customized Wordpress'],
+		featuredImage: '/images/featuredproject2.png',
 		gallery: [
 			{
 				link: '/images/project1about1.png',

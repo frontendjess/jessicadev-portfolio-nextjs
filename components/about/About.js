@@ -31,7 +31,7 @@ const About = () => {
 				</AboutMeTextContainer>
 			</AboutMeDreamBigContainer>
 
-			<AboutMeContainer>
+			<AboutMeContainer id='About'>
 				<AboutMeRow>
 					<AboutMeTitle>
 						<h3>About Me</h3>

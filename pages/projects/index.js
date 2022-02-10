@@ -4,8 +4,6 @@ import styles from '../../styles/Home.module.css';
 
 import styled from 'styled-components';
 
-import Heading from '../../components/heading/Heading';
-
 import About from '../../components/about/About';
 import Body from '../../components/body/Body';
 import Header from '../../components/header/Header';
@@ -20,6 +18,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 import listOfProjects from '../../libs/projectData';
+
+const ProjectsHeading = styled.div`
+	display: flex;
+	justify-content: center;
+`;
 
 export default function Projects() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -42,19 +45,24 @@ export default function Projects() {
 					<Navbar toggle={toggle} />
 				</Header>
 				<Main>
-					{listOfProjects.map((project) => (
-						<div key={project.pid}>
-							<p>{project.title}</p>
-							<Link href={`/projects/${project.pid}`}>
-								<a>specific project</a>
-							</Link>
-							{project.techstack.map((techstack) => (
-								<p key={techstack}>{techstack}</p>
-							))}
-						</div>
-					))}
+					<ProjectsHeading id='Topofpage'>
+						<h1>ALL WORKS</h1>
+					</ProjectsHeading>
+					<div className='section'>
+						{listOfProjects.map((project) => (
+							<div key={project.pid}>
+								<p>{project.title}</p>
+								<Link href={`/projects/${project.pid}`}>
+									<a>specific project</a>
+								</Link>
+								{project.techstack.map((techstack) => (
+									<p key={techstack}>{techstack}</p>
+								))}
+							</div>
+						))}
+					</div>
 				</Main>
-				<Footer id='Footer'>Footer section</Footer>
+				<Footer id='Footer'></Footer>
 			</Body>
 		</>
 	);

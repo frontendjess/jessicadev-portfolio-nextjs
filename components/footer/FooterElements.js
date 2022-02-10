@@ -129,7 +129,7 @@ const FooterBottom = () => {
 		<div className='inner-content-padding-btm'>
 			<FooterRow>
 				<FooterBtmCol>
-					<Link href='#Header'>
+					<Link href='#Topofpage'>
 						<a>
 							Back to top <FontAwesomeIcon icon={faLongArrowAltUp} />
 						</a>

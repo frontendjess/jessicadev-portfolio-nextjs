@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
         --line-height-md: 38.4px;
         --line-height-lg: 57.6px;
         --line-height-xl: 86.4px;
+        --line-height-huge: 194.4px;
 
         /* FONT WEIGHT */
         --font-weight-reg: 400;
@@ -127,6 +128,14 @@ const GlobalStyle = createGlobalStyle`
         line-height: var(--line-height-size);
     }
 
+    h1 {
+        font-family: var(--font-headings);
+        font-size: var(--h1-size);
+        letter-spacing: var(--letter-spacing-huge);
+        line-height: var(--line-height-huge);
+
+    }
+
     .bold {
         font-weight: var(--font-weight-bold);
     }
@@ -140,7 +149,16 @@ const GlobalStyle = createGlobalStyle`
         font-weight: var(--font-weight-bold);
         color: var(--color-secondary);
     }
+    
+    .secondary-text-color {
+        color: var(--color-secondary);
+    }
 
+    .tertiary-text-color {
+        color: var(--color-tertiary);
+    }
+
+    /* MARGINS AND PADDINGS */
     .section {
         padding: 100px 0;
     }
@@ -165,14 +183,7 @@ const GlobalStyle = createGlobalStyle`
         padding-bottom: 25px;
     }
 
-    .secondary-text-color {
-        color: var(--color-secondary);
-    }
-
-    .tertiary-text-color {
-        color: var(--color-tertiary);
-    }
-    
+    /* ICONS */
     .navbar-email-icon {
         &:hover {
             background-color: var(--color-black);
@@ -184,6 +195,8 @@ const GlobalStyle = createGlobalStyle`
     .times-icon {
         color: var(--color-black);
     }
+
+    /* LINKS */
 
     .logo-link {
             &:hover {
@@ -236,6 +249,8 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
+    /* RECENT WORK PAGE */
+
     .project-type-text {
         font-style: italic;
         color: var(--color-tertiary)
@@ -251,6 +266,8 @@ const GlobalStyle = createGlobalStyle`
         padding-right: 100px;
     }
 
+    /* PROJECTS PAGE */
+  
  
 
     /* MARQUEE */

@@ -2,10 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-import styled from 'styled-components';
 import Link from 'next/link';
-
-import Heading from '../components/heading/Heading';
 
 import About from '../components/about/About';
 import Body from '../components/body/Body';
@@ -39,12 +36,12 @@ export default function Home() {
 					<Sidebar isOpen={isOpen} toggle={toggle} />
 					<Navbar toggle={toggle} />
 				</Header>
-				<Main>
+				<Main id='Topofpage'>
 					<Hero />
 					<RecentWork />
-					<About id='About' />
+					<About />
 				</Main>
-				<Footer id='Footer'>Footer section</Footer>
+				<Footer />
 			</Body>
 		</>
 	);
