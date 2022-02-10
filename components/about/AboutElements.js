@@ -145,6 +145,10 @@ const AboutMeText = styled.div`
 		line-height: var(--line-height-md);
 		letter-spacing: var(--letter-spacing-md);
 	}
+
+	a {
+		font-weight: var(--font-weight-bold);
+	}
 `;
 
 export {

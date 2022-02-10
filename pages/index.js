@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
 import styled from 'styled-components';
+import Link from 'next/link';
 
 import Heading from '../components/heading/Heading';
 

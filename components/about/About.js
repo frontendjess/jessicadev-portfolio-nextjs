@@ -83,18 +83,24 @@ const About = () => {
 						</h5>
 
 						<p className='inner-content-padding-sm-btm'>
-							Let me help you translate your vision and business into an
-							engaging and impactful online identity. Have a project you think I
-							would be a great match for?{' '}
+							I am available for freelancing projects; let me help you translate
+							your vision and business into an engaging and impactful online
+							identity. Have a project you think I would be a great match for?{' '}
 							<Link href='/emptycv.pdf' download>
 								<a> Let&apos;s get a conversation started.</a>
 							</Link>
 						</p>
 
 						<p className='inner-content-padding-sm-btm'>
-							And to any potential employers, nice to see you here! I am
-							currently available for hire; please feel free to{' '}
-							<Link href='/emptycv.pdf' download>
+							And to any potential employers, nice to see you here! Could you
+							see me as a good fit for your company&apos;s front-end developer?
+							I am
+							<span className='important-text'>
+								{' '}
+								currently available for hire
+							</span>
+							; please feel free to{' '}
+							<Link href='mailto:hello@jessicadev.com'>
 								<a>email me</a>
 							</Link>
 							, you can also&nbsp;

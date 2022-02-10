@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
 				<Logo>
 					{' '}
 					<Link href='#Header'>
-						<a>
+						<a className='logo-link'>
 							<img src='/images/logo.svg' alt='logo' />
 						</a>
 					</Link>
@@ -94,7 +94,7 @@ const Navbar = ({ toggle }) => {
 					</Link>
 				</NavLink>
 				<NavLink>
-					<Link className='nav-link' href='#Portfolio'>
+					<Link className='nav-link' href='/projects'>
 						<a>Works</a>
 					</Link>
 				</NavLink>

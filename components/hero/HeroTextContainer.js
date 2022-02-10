@@ -35,7 +35,10 @@ const HeroTextContainer = () => {
 			<HeroText>
 				{isOpen ? (
 					<span>
-						The <h4 className='secondary-text-color'>branding process</h4>{' '}
+						The{' '}
+						<h4 className='secondary-text-color'>
+							design & development process
+						</h4>{' '}
 						excites me as much as my homemade gooey chocolate chip cookies 🍪{' '}
 					</span>
 				) : (

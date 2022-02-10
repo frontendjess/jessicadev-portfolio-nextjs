@@ -135,6 +135,12 @@ const GlobalStyle = createGlobalStyle`
         font-style: italic;
     }
 
+    .important-text {
+        font-style: italic;
+        font-weight: var(--font-weight-bold);
+        color: var(--color-secondary);
+    }
+
     .section {
         padding: 100px 0;
     }
@@ -179,8 +185,10 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-black);
     }
 
-    .nav-link {
-            
+    .logo-link {
+            &:hover {
+                background-color: transparent;
+            }
     }
 
     .link {
@@ -213,6 +221,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: var(--h3-size);
         letter-spacing: var(--letter-spacing-lg);
         color: var(--color-secondary);
+        text-transform: uppercase;
     
         
         &:hover {

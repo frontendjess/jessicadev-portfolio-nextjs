@@ -65,6 +65,10 @@ const FooterCol = styled.div`
 
 const FooterAboutText = styled.div`
 	text-align: right;
+	font-family: var(--font-body);
+	font-size: var(--font-size);
+	letter-spacing: var(--letter-spacing-size);
+	line-height: var(--line-height-size);
 
 	${media.lessThan('medium')`
 		padding-top: 50px;
