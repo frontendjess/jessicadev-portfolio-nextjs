@@ -43,6 +43,28 @@ const listOfProjects = [
 			},
 		],
 	},
+	{
+		pid: '3',
+		title: 'Design & Productions Studio Website',
+		companyname: 'The Garden Party AS',
+		projecttype: 'Design + Development',
+		techstack: ['Customized Wordpress'],
+		featuredImage: '/images/featuredproject2.png',
+		gallery: [
+			{
+				link: '/images/project1about1.png',
+				id: 1,
+			},
+			{
+				link: '/images/project1about1.png',
+				id: 2,
+			},
+			{
+				link: '/images/project1about1.png',
+				id: 3,
+			},
+		],
+	},
 ];
 
 export default listOfProjects;

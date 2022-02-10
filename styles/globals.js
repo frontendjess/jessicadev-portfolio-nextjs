@@ -267,8 +267,21 @@ const GlobalStyle = createGlobalStyle`
     }
 
     /* PROJECTS PAGE */
-  
+    .all-projects-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        border: solid 1px blue;
+    }
  
+    .all-projects-col {
+        border: solid 1px hotpink;
+        flex: 1 2 50%;
+
+        ${media.lessThan('large')`
+            flex: 0 0 100%;
+        `}
+    }
 
     /* MARQUEE */
     

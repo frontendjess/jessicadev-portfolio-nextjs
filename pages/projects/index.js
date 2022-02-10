@@ -48,9 +48,9 @@ export default function Projects() {
 					<ProjectsHeading id='Topofpage'>
 						<h1>ALL WORKS</h1>
 					</ProjectsHeading>
-					<div className='section'>
+					<div className='section all-projects-container'>
 						{listOfProjects.map((project) => (
-							<div key={project.pid}>
+							<div className='all-projects-col' key={project.pid}>
 								<p>{project.title}</p>
 								<Link href={`/projects/${project.pid}`}>
 									<a>specific project</a>
