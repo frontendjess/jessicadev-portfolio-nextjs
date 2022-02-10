@@ -51,13 +51,16 @@ export default function Projects() {
 					<div className='section all-projects-container'>
 						{listOfProjects.map((project) => (
 							<div className='all-projects-col' key={project.pid}>
+								<img src={project.featuredImage} alt='projects image' />
 								<p>{project.title}</p>
 								<Link href={`/projects/${project.pid}`}>
-									<a>specific project</a>
+									<a>View Project Case</a>
 								</Link>
-								{project.techstack.map((techstack) => (
-									<p key={techstack}>{techstack}</p>
-								))}
+								<div>
+									{project.techstack.map((techstack) => (
+										<span key={techstack}>{techstack} </span>
+									))}
+								</div>
 							</div>
 						))}
 					</div>

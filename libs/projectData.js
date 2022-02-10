@@ -4,8 +4,8 @@ const listOfProjects = [
 		title: 'Restaurant Website Design',
 		companyname: 'Freelance project',
 		projecttype: 'Design',
-		techstack: ['Design prototype on Figma'],
-		featuredImage: '/images/featuredproject1.png',
+		techstack: ['Design Prototype'],
+		featuredImage: '/images/selectedproject-restaurant.png',
 		gallery: [
 			{
 				link: '/images/project1about1.png',
@@ -45,10 +45,10 @@ const listOfProjects = [
 	},
 	{
 		pid: '3',
-		title: 'Design & Productions Studio Website',
-		companyname: 'The Garden Party AS',
+		title: 'E-commerce Interior Shop',
+		companyname: 'School Project',
 		projecttype: 'Design + Development',
-		techstack: ['Customized Wordpress'],
+		techstack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'Strapi'],
 		featuredImage: '/images/featuredproject2.png',
 		gallery: [
 			{
