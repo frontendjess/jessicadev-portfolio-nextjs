@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import media from 'styled-media-query';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -40,6 +41,11 @@ const FooterRow = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	${media.lessThan('medium')`
+	flex-direction: column;
+		flex-wrap: wrap;
+	`}
 `;
 
 const FooterCol = styled.div`
@@ -55,6 +61,11 @@ const FooterCol = styled.div`
 
 const FooterAboutText = styled.p`
 	text-align: right;
+
+	${media.lessThan('medium')`
+		padding-top: 50px;
+		text-align: left;
+	`}
 `;
 
 const FooterBtmCol = styled.div`
@@ -67,6 +78,10 @@ const FooterBtmCol = styled.div`
 		font-weight: var(--font-weight-reg);
 		text-transform: uppercase;
 	}
+
+	${media.lessThan('medium')`
+		padding-bottom: 25px;
+	`}
 `;
 
 const FooterCTA = () => {
