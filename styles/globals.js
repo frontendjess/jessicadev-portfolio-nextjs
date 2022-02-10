@@ -112,7 +112,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: var(--font-headings);
         text-decoration: none;
         color: var(--color-black);
-        font-weight: var(--font-weight-bold);
+
 
         &:hover {
         background-color: var(--color-black);
@@ -141,6 +141,10 @@ const GlobalStyle = createGlobalStyle`
 
     .section-padding-top {
         padding-top: 100px;
+    }
+
+    .section-padding-btm {
+        padding-bottom: 100px;
     }
 
     .inner-content-padding {

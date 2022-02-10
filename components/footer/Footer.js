@@ -4,6 +4,7 @@ import {
 	BuildMagicTogether,
 	WorkWithMe,
 	FooterCTA,
+	FooterBottom,
 } from './FooterElements';
 
 const Footer = () => {
@@ -12,6 +13,7 @@ const Footer = () => {
 			<WorkWithMe />
 			<BuildMagicTogether />
 			<FooterCTA />
+			<FooterBottom />
 		</FooterContainer>
 	);
 };

@@ -64,10 +64,7 @@ const RecentWork = () => {
 						/>
 
 						<a className='project-link' href='interiorshop'>
-							03.{' '}
-							<span className='project-type-text'>
-								[ Design + Dev + Branding ]
-							</span>{' '}
+							03. <span className='project-type-text'>[ Design + Dev ]</span>{' '}
 							E-commerce Interior Webshop
 						</a>
 					</RecentWorkDetails>

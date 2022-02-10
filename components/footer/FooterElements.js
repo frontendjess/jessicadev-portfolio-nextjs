@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons';
 
 const FooterContainer = styled.footer`
 	width: 100%;
@@ -36,9 +38,8 @@ const BuildMagicTogether = () => {
 
 const FooterRow = styled.div`
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	border: solid 1px red;
 `;
 
 const FooterCol = styled.div`
@@ -52,41 +53,70 @@ const FooterCol = styled.div`
 	}
 `;
 
-const FooterAboutText = styled.h5`
+const FooterAboutText = styled.p`
 	text-align: right;
-	font-family: var(--font-body);
-	font-size: var(--font-size-md);
-	letter-spacing: var(--letter-spacing-md);
-	font-weight: var(--font-weight-reg);
-	line-height: var(--line-height-md);
 `;
+
+const FooterBtmCol = styled.div`
+	flex: 0 0 50%;
+
+	a {
+		font-family: var(--font-body);
+		font-size: var(--font-size);
+		letter-spacing: var(--letter-spacing-size);
+		font-weight: var(--font-weight-reg);
+		text-transform: uppercase;
+	}
+`;
+
 const FooterCTA = () => {
 	return (
-		<FooterRow>
-			<FooterCol>
-				<div className='inner-content-padding-sm-btm'>
-					<Link href='mailto:hello@jessicadev.com'>
-						<a>EMAIL</a>
+		<div className='section-padding-btm'>
+			<FooterRow>
+				<FooterCol>
+					<div className='inner-content-padding-sm-btm'>
+						<Link href='mailto:hello@jessicadev.com'>
+							<a>EMAIL</a>
+						</Link>
+					</div>
+					<div className='inner-content-padding-sm-btm'>
+						<Link href='https://linkedin.com'>
+							<a>LINKEDIN</a>
+						</Link>
+					</div>
+					<div>
+						<Link href='https://github.com/frontendjess'>
+							<a>GITHUB</a>
+						</Link>
+					</div>
+				</FooterCol>
+				<FooterCol>
+					<FooterAboutText>
+						Like what you see?
+						<br /> I designed my portfolio and built it on React & Next.js
+					</FooterAboutText>
+				</FooterCol>
+			</FooterRow>
+		</div>
+	);
+};
+
+const FooterBottom = () => {
+	return (
+		<div className='inner-content-padding-btm'>
+			<FooterRow>
+				<FooterBtmCol>
+					<Link href='#Header'>
+						<a>
+							Back to top <FontAwesomeIcon icon={faLongArrowAltUp} />
+						</a>
 					</Link>
-				</div>
-				<div className='inner-content-padding-sm-btm'>
-					<Link href='https://linkedin.com'>
-						<a>LINKEDIN</a>
-					</Link>
-				</div>
-				<div>
-					<Link href='https://github.com/frontendjess'>
-						<a>GITHUB</a>
-					</Link>
-				</div>
-			</FooterCol>
-			<FooterCol>
-				<FooterAboutText>
-					Like what you see?
-					<br /> I designed my portfolio and built it on React & Next.js
-				</FooterAboutText>
-			</FooterCol>
-		</FooterRow>
+				</FooterBtmCol>
+				<FooterBtmCol>
+					<FooterAboutText>&copy; 2022</FooterAboutText>
+				</FooterBtmCol>
+			</FooterRow>
+		</div>
 	);
 };
 
@@ -135,4 +165,10 @@ const WorkWithMe = () => {
 	);
 };
 
-export { FooterContainer, BuildMagicTogether, WorkWithMe, FooterCTA };
+export {
+	FooterContainer,
+	BuildMagicTogether,
+	WorkWithMe,
+	FooterCTA,
+	FooterBottom,
+};
