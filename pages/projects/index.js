@@ -52,15 +52,18 @@ export default function Projects() {
 						{listOfProjects.map((project) => (
 							<div className='all-projects-col' key={project.pid}>
 								<img src={project.featuredImage} alt='projects image' />
-								<p>{project.title}</p>
-								<Link href={`/projects/${project.pid}`}>
-									<a>View Project Case</a>
-								</Link>
+								<p className='all-projects-title'>{project.title}</p>
+
 								<div>
 									{project.techstack.map((techstack) => (
-										<span key={techstack}>{techstack} </span>
+										<span className='all-projects-techstack' key={techstack}>
+											{techstack}{' '}
+										</span>
 									))}
 								</div>
+								<Link href={`/projects/${project.pid}`}>
+									<a className='all-projects-link'>View Project Case</a>
+								</Link>
 							</div>
 						))}
 					</div>

@@ -63,7 +63,7 @@ const RecentWork = () => {
 							alt='Ecommerce work mockup'
 						/>
 
-						<a className='project-link' href='/projects/3'>
+						<a className='project-link' href='/projects/4'>
 							03. <span className='project-type-text'>[ Design + Dev ]</span>{' '}
 							E-commerce Interior Webshop
 						</a>
