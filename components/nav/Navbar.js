@@ -36,7 +36,10 @@ const Navbar = ({ toggle }) => {
 					</Link>
 				</NavLink>
 				<NavLink>
-					<Link className='nav-link' href='mailto:hello@jessicadev.com'>
+					<Link
+						className='nav-link'
+						href='mailto:hello@jessicadev.com'
+						passHref>
 						<img className='navbar-email-icon' src='../images/email.png' />
 					</Link>
 				</NavLink>

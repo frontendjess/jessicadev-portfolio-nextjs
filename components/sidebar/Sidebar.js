@@ -50,7 +50,11 @@ const Sidebar = ({ isOpen, toggle }) => {
 							isOpen={isOpen}
 							onClick={toggle}
 							passHref>
-							<img className='navbar-email-icon' src='../images/email.png' />
+							<img
+								className='navbar-email-icon'
+								alt='email icon'
+								src='../images/email.png'
+							/>
 						</Link>
 					</SidebarLink>
 				</SidebarMenu>
