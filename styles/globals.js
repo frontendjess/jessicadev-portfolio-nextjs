@@ -287,20 +287,24 @@ const GlobalStyle = createGlobalStyle`
     
     .marquee {
         width: 100%;
-        padding: 90px 20px;
-        border-top: 1px solid #000000;
-        border-bottom: 1px solid #000000;
+        border-top: 1px solid var(--color-black);
+        border-bottom: 1px solid var(--color-black);
+        padding: 81px 0;
         text-align: center;
         overflow: hidden;
+
+        ${media.lessThan('medium')`
+            padding: 54px 0;
+    `}
       }
  
       .marquee .marquee-wrapper {
-        width: 100000px;
+        width: 50000px;
         animation: marqueeAnimation 38s linear 0s infinite running;
       }
 
-      .marquee h3 .marquee-title {
-        margin-right: 20px;
+      .marquee h2 .marquee-title {
+        margin-right: 0px;
         float: left;
         display: flex;
         justify-content: center;
@@ -313,23 +317,16 @@ const GlobalStyle = createGlobalStyle`
         font-weight: var(--font-weight-bold);
         letter-spacing: var(--letter-spacing-xxl);
         text-transform: uppercase;
+
+        ${media.lessThan('medium')`
+            font-size: var(--font-size-xl);
+            letter-spacing: var(--letter-spacing-xl);
+        `}
       }
 
       @keyframes marqueeAnimation {
         100% {
-          transform: translateX(-4600px);
-        }
-      }
-
-      @media (max-width: 992px) {
-        .marquee h3 {
-          font-size: 60px;
-        }
-      }
-
-      @media (max-width: 549px) {
-        .marquee h3 {
-          font-size: 50px;
+          transform: translateX(-4000px);
         }
       }
     

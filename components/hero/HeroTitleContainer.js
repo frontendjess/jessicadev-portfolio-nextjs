@@ -14,10 +14,12 @@ const HeroTitle = styled.h1`
 
 	${media.between('medium', 'large')`
 		font-size: var(--font-size-huge);
+		line-height: var(--line-height-huge);
 	`}
 
 	${media.lessThan('medium')`
 		font-size: var(--font-size-xl);
+		line-height: var(--line-height-xl);
 	`}
 `;
 

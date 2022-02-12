@@ -15,6 +15,12 @@ const BuildMagicTogetherText = styled.h3`
 	letter-spacing: var(--letter-spacing-xl);
 	line-height: var(--line-height-xl);
 	text-shadow: 2px 2px 2px var(--color-tertiary);
+
+	${media.lessThan('medium')`
+		font-size: var(--h4-size);
+		letter-spacing: var(--letter-spacing-lg);
+		line-height: var(--line-height-lg);
+	`}
 `;
 
 const IconArrow = styled.div`
@@ -147,7 +153,7 @@ const WorkWithMe = () => {
 	return (
 		<>
 			<div className='marquee'>
-				<h3>
+				<h2>
 					<div className='marquee-wrapper'>
 						<div className='marquee-title'>
 							<span className='marquee-font'> WORK WITH ME </span>
@@ -182,7 +188,7 @@ const WorkWithMe = () => {
 							<img src='../images/star.png' alt='star' />
 						</div>
 					</div>
-				</h3>
+				</h2>
 			</div>
 		</>
 	);
