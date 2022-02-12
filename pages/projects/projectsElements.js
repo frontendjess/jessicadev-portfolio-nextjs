@@ -36,6 +36,35 @@ const GoBackCol2 = styled.div`
     `}
 `;
 
+const ProjectContainer = styled.div`
+	width: 100%;
+`;
+
+const ProjectTitle = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	border: solid 1px red;
+
+	h1 {
+		font-size: var(--h2-size);
+		letter-spacing: var(--letter-spacing-xxl);
+		line-height: var(--line-height-xxl);
+		text-transform: uppercase;
+	}
+`;
+
+const ImageWrapper = styled.div`
+	img {
+		width: 100%;
+	}
+`;
+
+const ProjectDetailsContainer = styled.div`
+	width: 100%;
+	display: flex;
+	border: solid 1px blue;
+`;
 const GoBack = () => {
 	return (
 		<GoBackContainer>
@@ -53,4 +82,10 @@ const GoBack = () => {
 	);
 };
 
-export default GoBack;
+export {
+	GoBack,
+	ProjectContainer,
+	ProjectTitle,
+	ImageWrapper,
+	ProjectDetailsContainer,
+};

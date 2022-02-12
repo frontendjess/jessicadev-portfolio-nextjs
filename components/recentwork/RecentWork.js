@@ -76,9 +76,11 @@ const RecentWork = () => {
 							<p>WANT TO SEE MORE?</p>
 						</div>
 						<div className='inner-content-padding-btm'>
-							<a className='projects-text-link-secondary' href='/projects'>
-								View all works and projects
-							</a>
+							<Link href='/projects'>
+								<a className='projects-text-link-secondary'>
+									View all works and projects
+								</a>
+							</Link>
 						</div>
 
 						<div className='inner-content-padding-btm'>

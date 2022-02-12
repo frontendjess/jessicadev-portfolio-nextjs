@@ -107,6 +107,14 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
     }
 
+    ::-moz-selection { 
+        background: var(--color-secondary);
+      }
+      
+      ::selection {
+        background: var(--color-secondary);
+      }
+
     img {
         max-width: 100%;
     }
@@ -148,7 +156,6 @@ const GlobalStyle = createGlobalStyle`
             line-height: var(--line-height-xl);
         `}
     }
-
 
 
     .bold {

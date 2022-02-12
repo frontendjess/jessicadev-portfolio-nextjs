@@ -8,15 +8,15 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-restaurant.png',
 		gallery: [
 			{
-				link: '/images/project1about1.png',
+				link: '/images/gallery/1/restaurant-thirteen-moodboard.png',
 				id: 1,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/gallery/1/restaurant-thirteen-design-mockup.png',
 				id: 2,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/gallery/1/restaurant-thirteen-design-mockup.png',
 				id: 3,
 			},
 		],

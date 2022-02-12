@@ -31,12 +31,13 @@ export default function Projects() {
 		setIsOpen(!isOpen);
 	};
 
+	// working on a js code - not complete yet
+
 	const checkStatus = (project) => {
 		if (!listOfProjects[4].statusComplete) {
 			console.log(listOfProjects[4].statusComplete);
 		}
 	};
-
 	checkStatus();
 
 	return (

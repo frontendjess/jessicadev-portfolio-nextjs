@@ -14,9 +14,17 @@ import Main from '../../components/main/Main';
 import RecentWork from '../../components/recentwork/RecentWork';
 import Footer from '../../components/footer/Footer';
 
-import GoBack from './projectsElements';
+import {
+	GoBack,
+	ProjectContainer,
+	ProjectTitle,
+	ImageWrapper,
+	ProjectDetailsContainer,
+} from './projectsElements';
 
 import { useState } from 'react';
+
+import { useRouter } from 'next/router';
 
 import Link from 'next/link';
 
@@ -31,11 +39,18 @@ export default function Project({ projectData }) {
 
 	console.log(projectData);
 
+	// const router = useRouter();
+	// const { pid } = router.query;
+
+	// console.log('number of pid ', pid);
+
+	// console.log('projectdata', typeof projectData.title);
+
 	return (
 		<>
 			<Head>
-				<title>Jessicadev Portfolio Website</title>
-				<meta name='description' content='Jessicadev.com Portfolio Website' />
+				<title>Jessicadev - {projectData.title}</title>
+				<meta name='description' content={projectData.title} />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
@@ -44,7 +59,39 @@ export default function Project({ projectData }) {
 					<Sidebar isOpen={isOpen} toggle={toggle} />
 					<Navbar toggle={toggle} />
 				</Header>
-				<Main id='Topofpage'>this is my project</Main>
+				<Main id='Topofpage'>
+					<div className='section'>
+						<ProjectContainer>
+							<div>
+								<ProjectTitle>
+									<h1>{projectData.title}</h1>
+								</ProjectTitle>
+
+								<ProjectDetailsContainer>
+									<h2>{projectData.projecttype}</h2>
+								</ProjectDetailsContainer>
+								<ImageWrapper>
+									<img
+										src={projectData.featuredImage}
+										alt={projectData.title}
+									/>
+								</ImageWrapper>
+							</div>
+							<ImageWrapper>
+								<img
+									src={projectData.gallery[0].link}
+									alt={projectData.title}
+								/>
+							</ImageWrapper>
+							<ImageWrapper>
+								<img
+									src={projectData.gallery[1].link}
+									alt={projectData.title}
+								/>
+							</ImageWrapper>
+						</ProjectContainer>
+					</div>
+				</Main>
 				<GoBack />
 				<Footer id='Footer'></Footer>
 			</Body>
