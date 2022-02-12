@@ -149,7 +149,7 @@ const GlobalStyle = createGlobalStyle`
         `}
     }
 
- 
+
 
     .bold {
         font-weight: var(--font-weight-bold);

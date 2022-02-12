@@ -31,6 +31,14 @@ export default function Projects() {
 		setIsOpen(!isOpen);
 	};
 
+	const checkStatus = (project) => {
+		if (!listOfProjects[4].statusComplete) {
+			console.log(listOfProjects[4].statusComplete);
+		}
+	};
+
+	checkStatus();
+
 	return (
 		<>
 			<Head>

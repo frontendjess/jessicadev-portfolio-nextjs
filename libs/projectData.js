@@ -20,6 +20,7 @@ const listOfProjects = [
 				id: 3,
 			},
 		],
+		statusComplete: true,
 	},
 	{
 		pid: '2',
@@ -42,6 +43,7 @@ const listOfProjects = [
 				id: 3,
 			},
 		],
+		statusComplete: true,
 	},
 	{
 		pid: '3',
@@ -64,6 +66,7 @@ const listOfProjects = [
 				id: 3,
 			},
 		],
+		statusComplete: true,
 	},
 	{
 		pid: '4',
@@ -86,6 +89,7 @@ const listOfProjects = [
 				id: 3,
 			},
 		],
+		statusComplete: true,
 	},
 	{
 		pid: '5',
@@ -108,6 +112,7 @@ const listOfProjects = [
 				id: 3,
 			},
 		],
+		statusComplete: false,
 	},
 ];
 

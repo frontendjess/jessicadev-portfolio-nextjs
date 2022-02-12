@@ -17,6 +17,10 @@ const GoBackCol2 = styled.div`
 
 	h3 {
 		text-transform: uppercase;
+		font-family: var(--font-headings);
+		font-size: var(--h3-size);
+		letter-spacing: var(--letter-spacing-xl);
+		line-height: var(--line-height-xl);
 	}
 
 	a {
