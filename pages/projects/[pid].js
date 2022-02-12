@@ -15,7 +15,6 @@ import RecentWork from '../../components/recentwork/RecentWork';
 import Footer from '../../components/footer/Footer';
 
 import {
-	GoBack,
 	ProjectContainer,
 	ProjectTitle,
 	ImageWrapper,

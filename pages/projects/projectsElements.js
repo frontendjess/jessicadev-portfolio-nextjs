@@ -115,25 +115,7 @@ const ProjectObjectivesCap = styled.p`
 
 const ProjectObjectivesDetails = styled.p``;
 
-const GoBack = () => {
-	return (
-		<GoBackContainer>
-			<GoBackCol1>
-				<img src='../images/icon-go-back.svg' />
-			</GoBackCol1>
-			<GoBackCol2>
-				<Link href='/projects' passHref>
-					<h3>
-						<a>Go back to all works & projects</a>
-					</h3>
-				</Link>
-			</GoBackCol2>
-		</GoBackContainer>
-	);
-};
-
 export {
-	GoBack,
 	ProjectContainer,
 	ProjectTitle,
 	ImageWrapper,
@@ -143,4 +125,7 @@ export {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
+	GoBackCol1,
+	GoBackCol2,
+	GoBackContainer,
 };
