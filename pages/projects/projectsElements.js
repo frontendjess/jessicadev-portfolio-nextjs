@@ -143,4 +143,7 @@ export {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
+	GoBackCol1,
+	GoBackCol2,
+	GoBackContainer,
 };
