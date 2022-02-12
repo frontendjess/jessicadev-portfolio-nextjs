@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 					<SidebarLink>
 						<Link
 							className='nav-link'
-							href='#Header'
+							href='/#Header'
 							isOpen={isOpen}
 							onClick={toggle}>
 							<a>Home</a>
@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 					<SidebarLink>
 						<Link
 							className='nav-link'
-							href='#About'
+							href='/#About'
 							isOpen={isOpen}
 							onClick={toggle}>
 							<a>About</a>
@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 					<SidebarLink>
 						<Link
 							className='nav-link'
-							href='#Portfolio'
+							href='/projects'
 							isOpen={isOpen}
 							onClick={toggle}>
 							<a>Works</a>

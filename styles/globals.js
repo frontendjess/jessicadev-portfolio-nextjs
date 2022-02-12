@@ -133,7 +133,20 @@ const GlobalStyle = createGlobalStyle`
         font-size: var(--h1-size);
         letter-spacing: var(--letter-spacing-huge);
         line-height: var(--line-height-huge);
+    }
 
+    h2 {
+        font-family: var(--font-headings);
+        font-size: var(--h2-size);
+        letter-spacing: var(--letter-spacing-xxl);
+        line-height: var(--line-height-xxl);
+    }
+
+    h3 {
+        font-family: var(--font-headings);
+        font-size: var(--h3-size);
+        letter-spacing: var(--letter-spacing-xl);
+        line-height: var(--line-height-xl);
     }
 
     .bold {

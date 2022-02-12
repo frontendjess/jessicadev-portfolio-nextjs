@@ -14,7 +14,11 @@ import Main from '../../components/main/Main';
 import RecentWork from '../../components/recentwork/RecentWork';
 import Footer from '../../components/footer/Footer';
 
+import GoBack from './projectsElements';
+
 import { useState } from 'react';
+
+import Link from 'next/link';
 
 import listOfProjects from '../../libs/projectData';
 
@@ -26,6 +30,7 @@ export default function Project({ projectData }) {
 	};
 
 	console.log(projectData);
+
 	return (
 		<>
 			<Head>
@@ -40,6 +45,7 @@ export default function Project({ projectData }) {
 					<Navbar toggle={toggle} />
 				</Header>
 				<Main id='Topofpage'>this is my project</Main>
+				<GoBack />
 				<Footer id='Footer'></Footer>
 			</Body>
 		</>

@@ -29,11 +29,11 @@ const RecentWork = () => {
 					<RecentWorkDetails>
 						<img
 							className='mockup-image'
-							src='../images/restaurant-mockup.png'
+							src='../images/selectedworks/restaurant-mockup.png'
 							alt='client work mockup'
 						/>
 
-						<a className='project-link' href='restaurantdesign'>
+						<a className='project-link' href='/projects/1'>
 							01. <span className='project-type-text'>[ Design ]</span>{' '}
 							Restaurant Design Project
 						</a>
@@ -44,11 +44,11 @@ const RecentWork = () => {
 					<RecentWorkDetails>
 						<img
 							className='mockup-image'
-							src='../images/tgp-mockup.png'
+							src='../images/selectedworks/tgp-mockup.png'
 							alt='Client work mockup'
 						/>
 
-						<a className='project-link' href='thegardenparty'>
+						<a className='project-link' href='/projects/2'>
 							02. <span className='project-type-text'>[ Design + Dev]</span> The
 							Garden Party - Designs & Productions Studio Website
 						</a>
@@ -59,11 +59,11 @@ const RecentWork = () => {
 					<RecentWorkDetails>
 						<img
 							className='mockup-image'
-							src='../images/interiorshop-mockup.png'
+							src='../images/selectedworks/interiorshop-mockup.png'
 							alt='Ecommerce work mockup'
 						/>
 
-						<a className='project-link' href='interiorshop'>
+						<a className='project-link' href='/projects/3'>
 							03. <span className='project-type-text'>[ Design + Dev ]</span>{' '}
 							E-commerce Interior Webshop
 						</a>
@@ -76,7 +76,7 @@ const RecentWork = () => {
 							<p>WANT TO SEE MORE?</p>
 						</div>
 						<div className='inner-content-padding-btm'>
-							<a className='projects-text-link-secondary' href=''>
+							<a className='projects-text-link-secondary' href='/projects'>
 								View all works and projects
 							</a>
 						</div>
