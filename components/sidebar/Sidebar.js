@@ -48,7 +48,8 @@ const Sidebar = ({ isOpen, toggle }) => {
 							className='nav-link'
 							href='mailto:hello@jessicadev.com'
 							isOpen={isOpen}
-							onClick={toggle}>
+							onClick={toggle}
+							passHref>
 							<img className='navbar-email-icon' src='../images/email.png' />
 						</Link>
 					</SidebarLink>
