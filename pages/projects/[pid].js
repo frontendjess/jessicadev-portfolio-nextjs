@@ -20,6 +20,11 @@ import {
 	ProjectTitle,
 	ImageWrapper,
 	ProjectDetailsContainer,
+	ProjectDetailsCol,
+	ProjectObjectives,
+	ProjectObjectivesCol,
+	ProjectObjectivesCap,
+	ProjectObjectivesDetails,
 } from './projectsElements';
 
 import { useState } from 'react';
@@ -62,14 +67,22 @@ export default function Project({ projectData }) {
 				<Main id='Topofpage'>
 					<div className='section'>
 						<ProjectContainer>
-							<div>
-								<ProjectTitle>
-									<h1>{projectData.title}</h1>
-								</ProjectTitle>
+							<ProjectTitle>
+								<h1>{projectData.title}</h1>
+							</ProjectTitle>
 
-								<ProjectDetailsContainer>
-									<h2>{projectData.projecttype}</h2>
-								</ProjectDetailsContainer>
+							<ProjectDetailsContainer>
+								<ProjectDetailsCol>
+									<p>Project type: {projectData.projecttype}</p>
+									<p>Tech: {projectData.techstack}</p>
+								</ProjectDetailsCol>
+								<ProjectDetailsCol>
+									<p>Client: {projectData.companyname}</p>
+									<p>Date: {projectData.date}</p>
+								</ProjectDetailsCol>
+							</ProjectDetailsContainer>
+							<div className='section'>
+								{' '}
 								<ImageWrapper>
 									<img
 										src={projectData.featuredImage}
@@ -77,12 +90,28 @@ export default function Project({ projectData }) {
 									/>
 								</ImageWrapper>
 							</div>
-							<ImageWrapper>
-								<img
-									src={projectData.gallery[0].link}
-									alt={projectData.title}
-								/>
-							</ImageWrapper>
+
+							<ProjectObjectives>
+								<ProjectObjectivesCol>
+									<ProjectObjectivesCap>
+										{projectData.objectivesCap}
+									</ProjectObjectivesCap>
+								</ProjectObjectivesCol>
+								<ProjectObjectivesCol>
+									<ProjectObjectivesDetails>
+										{projectData.objectivesDetails}
+									</ProjectObjectivesDetails>
+								</ProjectObjectivesCol>
+							</ProjectObjectives>
+
+							<div className='section'>
+								<ImageWrapper>
+									<img
+										src={projectData.gallery[0].link}
+										alt={projectData.title}
+									/>
+								</ImageWrapper>
+							</div>
 							<ImageWrapper>
 								<img
 									src={projectData.gallery[1].link}

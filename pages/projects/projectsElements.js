@@ -6,7 +6,7 @@ const GoBackContainer = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 100px 0;
+	padding: 0 0 100px 0;
 `;
 
 const GoBackCol1 = styled.div`
@@ -44,13 +44,24 @@ const ProjectTitle = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
-	border: solid 1px red;
 
 	h1 {
 		font-size: var(--h2-size);
 		letter-spacing: var(--letter-spacing-xxl);
 		line-height: var(--line-height-xxl);
 		text-transform: uppercase;
+
+		${media.lessThan('medium')`
+			font-size: var(--h3-size);
+			letter-spacing: var(--letter-spacing-xl);
+			line-height: var(--line-height-xl);
+		`}
+
+		${media.lessThan('small')`
+		font-size: var(--h4-size);
+		letter-spacing: var(--letter-spacing-lg);
+		line-height: var(--line-height-lg);
+		`}
 	}
 `;
 
@@ -63,8 +74,47 @@ const ImageWrapper = styled.div`
 const ProjectDetailsContainer = styled.div`
 	width: 100%;
 	display: flex;
-	border: solid 1px blue;
+	flex-wrap: wrap;
+	justify-content: space-between;
 `;
+
+const ProjectDetailsCol = styled.div`
+	width: 50%;
+	padding: 50px 50px 0px 0;
+
+	p {
+		line-height: var(--line-height-size);
+	}
+
+	${media.lessThan('medium')`
+		width: 100%;
+	`}
+`;
+
+const ProjectObjectives = styled.div`
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 100px;
+`;
+
+const ProjectObjectivesCol = styled.div`
+	flex-basis: 40%;
+
+	${media.lessThan('medium')`
+		flex-basis: 100%;
+	`}
+`;
+
+const ProjectObjectivesCap = styled.p`
+	font-size: var(--font-size-md);
+	letter-spacing: var(--letter-spacing-md);
+	line-height: var(--line-height-md);
+`;
+
+const ProjectObjectivesDetails = styled.p``;
+
 const GoBack = () => {
 	return (
 		<GoBackContainer>
@@ -88,4 +138,9 @@ export {
 	ProjectTitle,
 	ImageWrapper,
 	ProjectDetailsContainer,
+	ProjectDetailsCol,
+	ProjectObjectives,
+	ProjectObjectivesCol,
+	ProjectObjectivesCap,
+	ProjectObjectivesDetails,
 };
