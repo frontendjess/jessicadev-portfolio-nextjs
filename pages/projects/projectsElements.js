@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import media from 'styled-media-query';
 
-const GoBack = styled.div`
-	width: 100%;
-`;
-
 const GoBackContainer = styled.div`
 	display: flex;
 	justify-content: flex-start;
@@ -118,6 +114,23 @@ const ProjectObjectivesCap = styled.p`
 
 const ProjectObjectivesDetails = styled.p``;
 
+const GoBack = () => {
+	return (
+		<GoBackContainer>
+			<GoBackCol1>
+				<img src='../images/icon-go-back.svg' />
+			</GoBackCol1>
+			<GoBackCol2>
+				<Link href='/projects' passHref>
+					<h3>
+						<a>Go back to all works & projects</a>
+					</h3>
+				</Link>
+			</GoBackCol2>
+		</GoBackContainer>
+	);
+};
+
 export {
 	ProjectContainer,
 	ProjectTitle,
@@ -129,7 +142,4 @@ export {
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
 	GoBack,
-	GoBackCol1,
-	GoBackCol2,
-	GoBackContainer,
 };

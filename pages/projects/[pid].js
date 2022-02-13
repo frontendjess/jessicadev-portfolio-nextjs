@@ -18,9 +18,6 @@ import {
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
 	GoBack,
-	GoBackCol1,
-	GoBackCol2,
-	GoBackContainer,
 } from './projectsElements';
 
 import { useState } from 'react';
@@ -108,20 +105,7 @@ export default function Project({ projectData }) {
 						</ProjectContainer>
 					</div>
 				</Main>
-				<GoBack>
-					<GoBackContainer>
-						<GoBackCol1>
-							<img src='../images/icon-go-back.svg' />
-						</GoBackCol1>
-						<GoBackCol2>
-							<Link href='/projects' passHref>
-								<h3>
-									<a>Go back to all works & projects</a>
-								</h3>
-							</Link>
-						</GoBackCol2>
-					</GoBackContainer>
-				</GoBack>
+				<GoBack />
 				<Footer id='Footer'></Footer>
 			</Body>
 		</>
