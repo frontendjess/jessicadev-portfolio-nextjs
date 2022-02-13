@@ -113,9 +113,11 @@ const ProjectObjectivesCap = styled.p`
 	line-height: var(--line-height-md);
 `;
 
-const ProjectObjectivesDetails = styled.p``;
+const ProjectObjectivesDetails = styled.p`
+	font-style: italic;
+`;
 
-export const GoBack = () => {
+const GoBack = () => {
 	return (
 		<GoBackContainer>
 			<GoBackCol1>
@@ -142,4 +144,5 @@ export {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
+	GoBack,
 };
