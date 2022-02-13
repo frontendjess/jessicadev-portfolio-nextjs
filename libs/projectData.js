@@ -37,15 +37,15 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-tgp.png',
 		gallery: [
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 1,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 2,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 3,
 			},
 		],
@@ -63,15 +63,15 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-horologydeck.png',
 		gallery: [
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 1,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 2,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 3,
 			},
 		],
@@ -89,15 +89,15 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-interior.png',
 		gallery: [
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 1,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 2,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 3,
 			},
 		],
@@ -115,15 +115,15 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-gimpville.png',
 		gallery: [
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 1,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 2,
 			},
 			{
-				link: '/images/project1about1.png',
+				link: '/images/featuredimage/project-restaurant.png',
 				id: 3,
 			},
 		],
