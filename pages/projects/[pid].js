@@ -49,61 +49,64 @@ export default function Project({ projectData }) {
 					<Navbar toggle={toggle} />
 				</Header>
 				<Main id='Topofpage'>
-					<div className='section'>
-						<ProjectContainer>
-							<ProjectTitle>
-								<h1>{projectData.title}</h1>
-							</ProjectTitle>
+					<ProjectContainer>
+						<ProjectTitle>
+							<h1>{projectData.title}</h1>
+						</ProjectTitle>
 
-							<ProjectDetailsContainer>
-								<ProjectDetailsCol>
-									<p>Project type: {projectData.projecttype}</p>
-									<p>Tech: {projectData.techstack}</p>
-								</ProjectDetailsCol>
-								<ProjectDetailsCol>
-									<p>Client: {projectData.companyname}</p>
-									<p>Date: {projectData.date}</p>
-								</ProjectDetailsCol>
-							</ProjectDetailsContainer>
-							<div className='section'>
-								{' '}
-								<ImageWrapper>
-									<img
-										src={projectData.featuredImage}
-										alt={projectData.title}
-									/>
-								</ImageWrapper>
-							</div>
+						<ProjectDetailsContainer>
+							<ProjectDetailsCol>
+								<p>Project type: {projectData.projecttype}</p>
+								<p>Tech: {projectData.techstack}</p>
+							</ProjectDetailsCol>
+							<ProjectDetailsCol>
+								<p>Client: {projectData.companyname}</p>
+								<p>Date: {projectData.date}</p>
+							</ProjectDetailsCol>
+						</ProjectDetailsContainer>
+						<div className='section'>
+							{' '}
+							<ImageWrapper>
+								<img src={projectData.featuredImage} alt={projectData.title} />
+							</ImageWrapper>
+						</div>
 
-							<ProjectObjectives>
-								<ProjectObjectivesCol>
-									<ProjectObjectivesCap>
-										{projectData.objectivesCap}
-									</ProjectObjectivesCap>
-								</ProjectObjectivesCol>
-								<ProjectObjectivesCol>
-									<ProjectObjectivesDetails>
-										{projectData.objectivesDetails}
-									</ProjectObjectivesDetails>
-								</ProjectObjectivesCol>
-							</ProjectObjectives>
+						<ProjectObjectives>
+							<ProjectObjectivesCol>
+								<ProjectObjectivesCap>
+									{projectData.objectivesCap}
+								</ProjectObjectivesCap>
+							</ProjectObjectivesCol>
+							<ProjectObjectivesCol>
+								<ProjectObjectivesDetails>
+									{projectData.objectivesDetails}
+								</ProjectObjectivesDetails>
+							</ProjectObjectivesCol>
+						</ProjectObjectives>
 
-							<div className='section'>
-								<ImageWrapper>
-									<img
-										src={projectData.gallery[0].link}
-										alt={projectData.title}
-									/>
-								</ImageWrapper>
-							</div>
+						<div className='section'>
 							<ImageWrapper>
 								<img
-									src={projectData.gallery[1].link}
+									src={projectData.gallery[0].link}
 									alt={projectData.title}
 								/>
 							</ImageWrapper>
-						</ProjectContainer>
-					</div>
+						</div>
+						<ImageWrapper>
+							<img src={projectData.gallery[1].link} alt={projectData.title} />
+						</ImageWrapper>
+						<div className='section'>
+							<ImageWrapper>
+								<img
+									src={projectData.gallery[2].link}
+									alt={projectData.title}
+								/>
+							</ImageWrapper>
+						</div>
+						<ImageWrapper>
+							<img src={projectData.gallery[3].link} alt={projectData.title} />
+						</ImageWrapper>
+					</ProjectContainer>
 				</Main>
 				<GoBack />
 				<Footer id='Footer'></Footer>

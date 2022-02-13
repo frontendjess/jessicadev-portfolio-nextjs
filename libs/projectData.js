@@ -2,7 +2,7 @@ const listOfProjects = [
 	{
 		pid: '1',
 		title: 'Restaurant Website Design',
-		companyname: 'Freelance project',
+		companyname: 'Side project',
 		date: 'July 2021',
 		projecttype: 'Design',
 		techstack: ['Design Prototype'],
@@ -17,8 +17,12 @@ const listOfProjects = [
 				id: 2,
 			},
 			{
-				link: '/images/gallery/1/restaurant-thirteen-design-mockup.png',
+				link: '/images/gallery/1/restaurant-thirteen-drinks-mockup.png',
 				id: 3,
+			},
+			{
+				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				id: 4,
 			},
 		],
 		statusComplete: true,
@@ -37,16 +41,20 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-tgp.png',
 		gallery: [
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/2/thegardenparty-moodboard.png',
 				id: 1,
 			},
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/2/thegardenparty-colorpicker.png',
 				id: 2,
 			},
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/2/thegardenparty-photos-mockup.png',
 				id: 3,
+			},
+			{
+				link: '/images/gallery/2/thegardenparty-projectsdetails-mockup.png',
+				id: 4,
 			},
 		],
 		statusComplete: true,
@@ -74,6 +82,10 @@ const listOfProjects = [
 				link: '/images/featuredimage/project-restaurant.png',
 				id: 3,
 			},
+			{
+				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				id: 4,
+			},
 		],
 		statusComplete: true,
 		objectivesCap: '',
@@ -100,6 +112,10 @@ const listOfProjects = [
 				link: '/images/featuredimage/project-restaurant.png',
 				id: 3,
 			},
+			{
+				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				id: 4,
+			},
 		],
 		statusComplete: true,
 		objectivesCap: '',
@@ -125,6 +141,10 @@ const listOfProjects = [
 			{
 				link: '/images/featuredimage/project-restaurant.png',
 				id: 3,
+			},
+			{
+				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				id: 4,
 			},
 		],
 		statusComplete: false,
