@@ -24,6 +24,7 @@ import {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
+	GoBack,
 	GoBackCol1,
 	GoBackCol2,
 	GoBackContainer,

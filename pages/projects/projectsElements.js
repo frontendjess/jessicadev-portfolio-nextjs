@@ -1,6 +1,9 @@
 import styled from 'styled-components';
-import Link from 'next/link';
 import media from 'styled-media-query';
+
+const GoBack = styled.div`
+	width: 100%;
+`;
 
 const GoBackContainer = styled.div`
 	display: flex;
@@ -125,6 +128,7 @@ export {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
+	GoBack,
 	GoBackCol1,
 	GoBackCol2,
 	GoBackContainer,
