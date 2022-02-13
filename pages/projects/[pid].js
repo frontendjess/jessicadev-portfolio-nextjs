@@ -1,17 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../../styles/Home.module.css';
 
-import styled from 'styled-components';
-
-import About from '../../components/about/About';
 import Body from '../../components/body/Body';
 import Header from '../../components/header/Header';
 import Sidebar from '../../components/sidebar/Sidebar';
-import Hero from '../../components/hero/Hero';
 import Navbar from '../../components/nav/Navbar';
 import Main from '../../components/main/Main';
-import RecentWork from '../../components/recentwork/RecentWork';
 import Footer from '../../components/footer/Footer';
 
 import {
@@ -32,8 +25,6 @@ import {
 
 import { useState } from 'react';
 
-import { useRouter } from 'next/router';
-
 import Link from 'next/link';
 
 import listOfProjects from '../../libs/projectData';
@@ -46,13 +37,6 @@ export default function Project({ projectData }) {
 	};
 
 	console.log(projectData);
-
-	// const router = useRouter();
-	// const { pid } = router.query;
-
-	// console.log('number of pid ', pid);
-
-	// console.log('projectdata', typeof projectData.title);
 
 	return (
 		<>
