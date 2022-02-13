@@ -18,7 +18,7 @@ import {
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
 	GoBack,
-} from './projectsElements';
+} from '../../components/projects/projectsElements';
 
 import { useState } from 'react';
 
