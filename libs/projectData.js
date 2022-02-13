@@ -50,6 +50,8 @@ const listOfProjects = [
 			},
 		],
 		statusComplete: true,
+		objectivesCap: '',
+		objectivesDetails: '',
 	},
 	{
 		pid: '3',
@@ -74,6 +76,8 @@ const listOfProjects = [
 			},
 		],
 		statusComplete: true,
+		objectivesCap: '',
+		objectivesDetails: '',
 	},
 	{
 		pid: '4',
@@ -98,6 +102,8 @@ const listOfProjects = [
 			},
 		],
 		statusComplete: true,
+		objectivesCap: '',
+		objectivesDetails: '',
 	},
 	{
 		pid: '5',
@@ -122,6 +128,8 @@ const listOfProjects = [
 			},
 		],
 		statusComplete: false,
+		objectivesCap: '',
+		objectivesDetails: '',
 	},
 ];
 
