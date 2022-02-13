@@ -115,7 +115,7 @@ const ProjectObjectivesCap = styled.p`
 
 const ProjectObjectivesDetails = styled.p``;
 
-const GoBack = () => {
+export const GoBack = () => {
 	return (
 		<GoBackContainer>
 			<GoBackCol1>
@@ -142,5 +142,4 @@ export {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
-	GoBack,
 };
