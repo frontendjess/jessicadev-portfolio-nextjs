@@ -33,10 +33,10 @@ const RecentWork = () => {
 							alt='client work mockup'
 						/>
 
-						{/* <a className='project-link' href='/projects/1'>
+						<a className='project-link' href='/projects/1'>
 							01. <span className='project-type-text'>[ Design ]</span>{' '}
 							Restaurant Design Project
-						</a> */}
+						</a>
 					</RecentWorkDetails>
 				</div>
 
@@ -48,10 +48,10 @@ const RecentWork = () => {
 							alt='Client work mockup'
 						/>
 
-						{/* <a className='project-link' href='/projects/2'>
+						<a className='project-link' href='/projects/2'>
 							02. <span className='project-type-text'>[ Design + Dev]</span> The
 							Garden Party - Designs & Productions Studio Website
-						</a> */}
+						</a>
 					</RecentWorkDetails>
 				</div>
 
@@ -63,10 +63,10 @@ const RecentWork = () => {
 							alt='Ecommerce work mockup'
 						/>
 
-						{/* <a className='project-link' href='/projects/4'>
+						<a className='project-link' href='/projects/4'>
 							03. <span className='project-type-text'>[ Design + Dev ]</span>{' '}
 							E-commerce Interior Webshop
-						</a> */}
+						</a>
 					</RecentWorkDetails>
 				</div>
 
