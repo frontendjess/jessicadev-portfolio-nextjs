@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Link from 'next/link';
 import FaBarsIcon from './FaBarsIcon';
 import { Navlinks, NavLink, Logo, MobileIcon } from './NavbarElements';

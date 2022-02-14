@@ -1,4 +1,3 @@
-import RotatingGimmick from '../rotatinggimmick/Rotatinggimmick';
 import HeroContainer from './HeroContainer';
 import HeroTextContainer from './HeroTextContainer';
 import HeroTitleContainer from './HeroTitleContainer';
