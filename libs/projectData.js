@@ -137,40 +137,6 @@ const listOfProjects = [
 		objectivesCap: '',
 		objectivesDetails: '',
 	},
-	{
-		pid: '5',
-		title: 'Animations Studio Website',
-		companyname: 'Gimpville AS',
-		date: 'Currenly in production',
-		projecttype: 'Design + Development',
-		techstack: ['Under development - Coming Soon'],
-		featuredImage: '/images/featuredimage/project-gimpville.png',
-		gallery: [
-			{
-				link: '/images/featuredimage/project-restaurant.png',
-				id: 1,
-			},
-			{
-				link: '/images/featuredimage/project-restaurant.png',
-				id: 2,
-			},
-			{
-				link: '/images/featuredimage/project-restaurant.png',
-				id: 3,
-			},
-			{
-				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
-				id: 4,
-			},
-			{
-				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
-				id: 5,
-			},
-		],
-		statusComplete: false,
-		objectivesCap: '',
-		objectivesDetails: '',
-	},
 ];
 
 export default listOfProjects;

@@ -31,15 +31,6 @@ export default function Projects() {
 		setIsOpen(!isOpen);
 	};
 
-	// working on a js code - not complete yet
-
-	const checkStatus = (project) => {
-		if (!listOfProjects[4].statusComplete) {
-			console.log(listOfProjects[4].statusComplete);
-		}
-	};
-	checkStatus();
-
 	return (
 		<>
 			<Head>
@@ -75,6 +66,22 @@ export default function Projects() {
 								</Link>
 							</div>
 						))}
+					</div>
+
+					<div className='section-padding-btm all-projects-container'>
+						<div className='all-projects-col'>
+							<img
+								src='../images/featuredimage/project-gimpville.png'
+								alt='projects image'
+							/>
+							<p className='all-projects-title'>Animations Studio Website</p>
+
+							<div>
+								<span className='all-projects-techstack'>
+									Under development - Coming Soon
+								</span>
+							</div>
+						</div>
 					</div>
 				</Main>
 				<Footer id='Footer'></Footer>
