@@ -91,7 +91,7 @@ const listOfProjects = [
 				id: 3,
 			},
 			{
-				link: '/images/gallery/3/horologydeck-deck-mockup.png',
+				link: '/images/gallery/3/horologydeck-campaign.png',
 				id: 4,
 			},
 			{
