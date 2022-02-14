@@ -79,13 +79,6 @@ const GlobalStyle = createGlobalStyle`
         --color-tertiary: #787878;
     }
 
-    @font-face {
-        font-family: 'brittanysignature';
-        src: url('../fonts/brittanysignature-webfont.woff2') format('woff2'),
-             url('../fonts/brittanysignature-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
 
     *,
     *::before,
@@ -387,7 +380,7 @@ const GlobalStyle = createGlobalStyle`
         animation: marqueeAnimation 38s linear 0s infinite running;
       }
 
-      .marquee h2 .marquee-title {
+      .marquee .marquee-title {
         margin-right: 0px;
         float: left;
         display: flex;
