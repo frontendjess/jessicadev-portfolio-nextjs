@@ -106,6 +106,14 @@ export default function Project({ projectData }) {
 						<ImageWrapper>
 							<img src={projectData.gallery[3].link} alt={projectData.title} />
 						</ImageWrapper>
+						<div className='section'>
+							<ImageWrapper>
+								<img
+									src={projectData.gallery[4].link}
+									alt={projectData.title}
+								/>
+							</ImageWrapper>
+						</div>
 					</ProjectContainer>
 				</Main>
 				<GoBack />

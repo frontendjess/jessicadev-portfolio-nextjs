@@ -21,8 +21,12 @@ const listOfProjects = [
 				id: 3,
 			},
 			{
-				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				link: '/images/gallery/1/restaurant-thirteen-menu-mockup.png',
 				id: 4,
+			},
+			{
+				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				id: 5,
 			},
 		],
 		statusComplete: true,
@@ -45,16 +49,20 @@ const listOfProjects = [
 				id: 1,
 			},
 			{
-				link: '/images/gallery/2/thegardenparty-colorpicker.png',
+				link: '/images/gallery/2/thegardenparty-mainfeatures-mockup.png',
 				id: 2,
 			},
 			{
-				link: '/images/gallery/2/thegardenparty-photos-mockup.png',
+				link: '/images/gallery/2/thegardenparty-colorpicker.png',
 				id: 3,
 			},
 			{
-				link: '/images/gallery/2/thegardenparty-projectsdetails-mockup.png',
+				link: '/images/gallery/2/thegardenparty-photos-mockup.png',
 				id: 4,
+			},
+			{
+				link: '/images/gallery/2/thegardenparty-projectsdetails-mockup.png',
+				id: 5,
 			},
 		],
 		statusComplete: true,
@@ -71,20 +79,24 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-horologydeck.png',
 		gallery: [
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/3/horologydeck-socialmedia.png',
 				id: 1,
 			},
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/3/horologydeck-marketing-goals.png',
 				id: 2,
 			},
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/3/horologydeck-kickstarter.png',
 				id: 3,
 			},
 			{
-				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				link: '/images/gallery/3/horologydeck-deck-mockup.png',
 				id: 4,
+			},
+			{
+				link: '/images/gallery/3/horologydeck-insta.png',
+				id: 5,
 			},
 		],
 		statusComplete: true,
@@ -116,6 +128,10 @@ const listOfProjects = [
 				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
 				id: 4,
 			},
+			{
+				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				id: 5,
+			},
 		],
 		statusComplete: true,
 		objectivesCap: '',
@@ -145,6 +161,10 @@ const listOfProjects = [
 			{
 				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
 				id: 4,
+			},
+			{
+				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				id: 5,
 			},
 		],
 		statusComplete: false,
