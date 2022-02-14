@@ -265,6 +265,17 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
+    .specific-projects-link {
+        font-size: var(--font-size);
+        letter-spacing: var(--letter-spacing-sm);
+
+        
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-black);
+        }
+    }
+
     .tell-me-more {
         &:hover {
             cursor: pointer;

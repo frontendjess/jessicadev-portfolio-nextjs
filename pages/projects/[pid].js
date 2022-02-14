@@ -17,6 +17,7 @@ import {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
+	ProjectObjectivesDetailsText,
 	GoBack,
 } from '../../components/projects/projectsElements';
 
@@ -81,7 +82,15 @@ export default function Project({ projectData }) {
 							</ProjectObjectivesCol>
 							<ProjectObjectivesCol>
 								<ProjectObjectivesDetails>
-									{projectData.objectivesDetails}
+									<ProjectObjectivesDetailsText>
+										{projectData.objectivesDetails}
+									</ProjectObjectivesDetailsText>
+									<br />
+									<Link href={projectData.url}>
+										<a className='specific-projects-link'>
+											Project website/demo
+										</a>
+									</Link>
 								</ProjectObjectivesDetails>
 							</ProjectObjectivesCol>
 						</ProjectObjectives>

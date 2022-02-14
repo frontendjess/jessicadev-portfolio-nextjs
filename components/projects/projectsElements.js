@@ -113,7 +113,9 @@ const ProjectObjectivesCap = styled.p`
 	line-height: var(--line-height-md);
 `;
 
-const ProjectObjectivesDetails = styled.p`
+const ProjectObjectivesDetails = styled.div``;
+
+const ProjectObjectivesDetailsText = styled.p`
 	font-style: italic;
 `;
 
@@ -146,5 +148,6 @@ export {
 	ProjectObjectivesCol,
 	ProjectObjectivesCap,
 	ProjectObjectivesDetails,
+	ProjectObjectivesDetailsText,
 	GoBack,
 };
