@@ -75,7 +75,7 @@ const listOfProjects = [
 		companyname: 'Horology Deck',
 		date: 'July 2022 - Ongoing',
 		projecttype: 'Digital Marketing + Crowdfunding + SoMe',
-		techstack: ['Digital Marketing'],
+		techstack: ['Digital Marketing', 'Crowdfunding Platform'],
 		featuredImage: '/images/featuredimage/project-horologydeck.png',
 		gallery: [
 			{
