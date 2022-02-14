@@ -35,6 +35,8 @@ export default function Project({ projectData }) {
 
 	console.log(projectData);
 
+	const techstackText = projectData.techstack.join(' ');
+
 	return (
 		<>
 			<Head>
@@ -57,7 +59,7 @@ export default function Project({ projectData }) {
 						<ProjectDetailsContainer>
 							<ProjectDetailsCol>
 								<p>Project type: {projectData.projecttype}</p>
-								<p>Tech: {projectData.techstack}</p>
+								<p>Tech: {techstackText}</p>
 							</ProjectDetailsCol>
 							<ProjectDetailsCol>
 								<p>Client: {projectData.companyname}</p>

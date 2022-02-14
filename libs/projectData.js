@@ -66,8 +66,10 @@ const listOfProjects = [
 			},
 		],
 		statusComplete: true,
-		objectivesCap: '',
-		objectivesDetails: '',
+		objectivesCap:
+			'The Garden Party is a design and productions studio based in Oslo. One of my fun clients who sure aren`t afraid to dream big. It was a delight for me to design and develop a custom wordpress website that showcases their quality productions.',
+		objectivesDetails:
+			'We explored multiple different styles I had come up with for their website and we went with a black and white theme that showcases their productions as soon as you enter the website. Then for each specific production page, we used high quality images & an engaging gallery with pleasurable colors that shows off their amazing work. My main objective was to develop a simple yet sophisticated website with a beautiful minimalistic architecture that works hand in hand with the clients works and productions. For a little contrast to the main page black and white, for each specific production page, the headings are specifically chosen colors from each production images.',
 	},
 	{
 		pid: '3',
@@ -113,23 +115,23 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-interior.png',
 		gallery: [
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/4/interiorshop-colorpalette.png',
 				id: 1,
 			},
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/4/interiorshop-moodboard.png',
 				id: 2,
 			},
 			{
-				link: '/images/featuredimage/project-restaurant.png',
+				link: '/images/gallery/4/interiorshop-styleguide.png',
 				id: 3,
 			},
 			{
-				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				link: '/images/gallery/4/interiorshop-mockup.png',
 				id: 4,
 			},
 			{
-				link: '/images/gallery/1/restaurant-thirteen-some-mockup.png',
+				link: '/images/gallery/4/interiorshop-dashboard.png',
 				id: 5,
 			},
 		],
