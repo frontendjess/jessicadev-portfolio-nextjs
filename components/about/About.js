@@ -9,6 +9,7 @@ import {
 	AboutMeRow,
 	AboutMeTitle,
 	AboutMeText,
+	AboutMeRowBtm,
 } from './AboutElements';
 
 const About = () => {
@@ -34,7 +35,7 @@ const About = () => {
 			<AboutMeContainer id='About'>
 				<AboutMeRow>
 					<AboutMeTitle>
-						<h3>About Me</h3>
+						<h3 className='inner-content-padding-sm-btm'>About Me</h3>
 					</AboutMeTitle>
 					<AboutMeText>
 						<h5 className='inner-content-padding-sm-btm'>
@@ -55,9 +56,10 @@ const About = () => {
 						</p>
 						<p className='inner-content-padding-sm-btm'>
 							I am currently on my last semester of my 2 year front-end
-							development education at Noroff Oslo. This hasn&apos;t stopped me
-							from working on projects for clients through my freelancing
-							company.
+							development education at Noroff Oslo. Isn&apos;t front-end
+							development awesome? You can freelance and work with clients while
+							you go to school! Which is exactly what I have been doing; working
+							on some cool client projects through my freelancing company.
 						</p>
 						<p className='inner-content-padding-sm-btm'>
 							I have experience working with all kinds of clients; usually the
@@ -73,7 +75,9 @@ const About = () => {
 				</AboutMeRow>
 				<AboutMeRow>
 					<AboutMeTitle>
-						<h3>Skills / What I can do for you</h3>
+						<h3 className='inner-content-padding-sm-btm'>
+							Skills / What I can do for you
+						</h3>
 					</AboutMeTitle>
 					<AboutMeText>
 						<h5 className='inner-content-padding-sm-btm'>
@@ -111,6 +115,43 @@ const About = () => {
 						</p>
 					</AboutMeText>
 				</AboutMeRow>
+				<AboutMeRowBtm>
+					<AboutMeTitle>
+						<h3 className='inner-content-padding-sm-btm'>
+							MY TECHSTACK GROWTH 🌱
+						</h3>
+					</AboutMeTitle>
+					<AboutMeText>
+						<p className='inner-content-padding-sm-btm'>
+							In addition to the above mentioned HTML, CSS, JavaScript, React,
+							Next.Js, Strapi.
+						</p>
+						<h5 className='inner-content-padding-sm-btm'>
+							<span className='secondary-text-color'>
+								[ MORE FRAMEWORKS & LIBRARIES I CAN DO ]
+							</span>{' '}
+							SCSS / BOOTSTRAP / STYLED-COMPONENTS
+						</h5>
+						<h5 className='inner-content-padding-sm-btm'>
+							<span className='secondary-text-color'>
+								[ CURRENTLY LEARNING ]
+							</span>{' '}
+							TYPESCRIPT / GRAPHQL / JEST / CYPRESS / LODASH / TAILWIND
+						</h5>
+						<h5 className='inner-content-padding-sm-btm'>
+							<span className='project-type-text'>
+								[ WHAT I PLAN ON LEARNING NEXT ]
+							</span>{' '}
+							ANGULAR / SANITY CMS
+						</h5>
+						<h5 className='inner-content-padding-sm-btm'>
+							<span className='project-type-text'>
+								[ MY DESIGN & PROTOTYPING TOOLS ]
+							</span>{' '}
+							FIGMA / ADOBE XD / ADOBE PHOTOSHOP{' '}
+						</h5>
+					</AboutMeText>
+				</AboutMeRowBtm>
 			</AboutMeContainer>
 		</>
 	);

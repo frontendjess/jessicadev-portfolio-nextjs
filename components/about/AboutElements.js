@@ -122,6 +122,16 @@ const AboutMeRow = styled.div`
 	`}
 `;
 
+const AboutMeRowBtm = styled.div`
+	display: flex;
+	flex-direction: row;
+	padding: 100px 0 100px 0;
+
+	${media.lessThan('large')`
+	flex-direction: column;
+`}
+`;
+
 const AboutMeTitle = styled.div`
 	flex: 1 1 50%;
 	padding-right: 50px;
@@ -161,4 +171,5 @@ export {
 	AboutMeRow,
 	AboutMeTitle,
 	AboutMeText,
+	AboutMeRowBtm,
 };

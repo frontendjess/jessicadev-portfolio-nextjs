@@ -109,7 +109,7 @@ const FooterCTA = () => {
 						</Link>
 					</div>
 					<div className='inner-content-padding-sm-btm'>
-						<Link href='https://linkedin.com'>
+						<Link href='https://linkedin.com/in/jessica-dev'>
 							<a>LINKEDIN</a>
 						</Link>
 					</div>
