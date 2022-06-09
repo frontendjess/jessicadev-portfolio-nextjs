@@ -54,3 +54,7 @@ Due to this project being for school, contributions are not needed. However, if 
 You can find me on my portfolio
 
 [Personal Portfolio](https://jessicadevportfolio.netlify.app/)
+
+## Acknowledgements
+
+I want to thank our instructor Monde for helping me bring my ideas to fruition when I wasn't sure how. And of course for teaching us what we do not know! :)
