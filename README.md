@@ -57,4 +57,4 @@ You can find me on my portfolio
 
 ## Acknowledgements
 
-I want to thank our instructor Monde for helping me bring my ideas to fruition when I wasn't sure how. And of course for teaching us what we do not know! :)
+I want to thank our instructor Monde for helping me bring my ideas to fruition when I wasn't sure how. :)
