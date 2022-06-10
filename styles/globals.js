@@ -261,6 +261,7 @@ const GlobalStyle = createGlobalStyle`
     .specific-projects-link {
         font-size: var(--font-size);
         letter-spacing: var(--letter-spacing-sm);
+        color: var(--color-secondary);
 
         
         &:hover {

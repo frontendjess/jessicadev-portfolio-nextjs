@@ -7,6 +7,7 @@ const listOfProjects = [
 		projecttype: 'Design',
 		techstack: ['Design Prototype'],
 		url: 'https://www.figma.com/file/MQvmdykqa16EcXYVkQ2GG0/Thirteen-restaurant?node-id=0%3A1',
+		repo: '',
 		featuredImage: '/images/featuredimage/project-restaurant.png',
 		gallery: [
 			{
@@ -44,6 +45,7 @@ const listOfProjects = [
 		projecttype: 'Design + Development',
 		techstack: ['Customized Wordpress'],
 		url: 'https://thegardenparty.no',
+		repo: '',
 		featuredImage: '/images/featuredimage/project-tgp.png',
 		gallery: [
 			{
@@ -81,6 +83,7 @@ const listOfProjects = [
 		projecttype: 'Digital Marketing + Crowdfunding + SoMe',
 		techstack: ['Digital Marketing', 'Crowdfunding Platform'],
 		url: 'https://horologydeck.com',
+		repo: '',
 		featuredImage: '/images/featuredimage/project-horologydeck.png',
 		gallery: [
 			{
@@ -118,6 +121,7 @@ const listOfProjects = [
 		projecttype: 'Design + Development',
 		techstack: ['HTML', 'SCSS', 'Bootstrap', 'JavaScript', 'Strapi'],
 		url: 'https://interior-shop.netlify.app/',
+		repo: 'https://github.com/Noroff-Fagskole/semester-project-frontendjess',
 		featuredImage: '/images/featuredimage/project-interior.png',
 		gallery: [
 			{
@@ -146,6 +150,82 @@ const listOfProjects = [
 			'One of my more recent school projects; tasked with creating an e-commerce website using tech we have learned so far. Main objectives were ensuring a good user experience, UX/UI design while following today`s trends and design patterns.',
 		objectivesDetails:
 			'Inspired by the raw natural beauty of southern California, the simplistic and high quality design of Scandinavia; I created an interior design shop website. The UX design and branding process was exciting and I used my favorite design tool Figma to create my style guides and prototypes. I used HTML, SCSS, Bootstrap and a headless CMS Strapi for my API.',
+	},
+	{
+		pid: '5',
+		title: 'Curated Hotels Booking Website',
+		companyname: 'School Project',
+		date: 'March 2022',
+		projecttype: 'Design + Development',
+		techstack: ['Next.Js', 'Strapi', 'Heroku', 'Styled-Components'],
+		url: 'https://jessica-nextjs-nextauth.netlify.app/',
+		repo: 'https://github.com/frontendjess/js-frameworks-ca-jessica-nextjs',
+		featuredImage: '/images/featuredimage/project-javascriptframeworks.png',
+		gallery: [
+			{
+				link: '/images/gallery/5/javascriptframeworks-specificemployee.png',
+				id: 1,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-nextjs.png',
+				id: 2,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-formik.png',
+				id: 3,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-nextauth.png',
+				id: 4,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-netlify.png',
+				id: 5,
+			},
+		],
+		statusComplete: true,
+		objectivesCap:
+			'One of my school projects, for JavaScript Frameworks course assignment. The focus for this project was entirly code based and no styling. :)',
+		objectivesDetails:
+			'I built my project in Next.js, bootstrapped with create-next-app, hard-coded JSON, used Formik and NextAuth for login. Deployed live website on Netlify. The objectives were to showcase our understanding of paths, client-side authentication, fetching API data. I based my project around admin for a medical clinic employees list.',
+	},
+	{
+		pid: '6',
+		title: 'JavaScript Frameworks Course Assignment',
+		companyname: 'School Project',
+		date: 'March 2022',
+		projecttype: 'Development',
+		techstack: ['HTML', 'JavaScript', 'Next.Js'],
+		url: 'https://jessica-nextjs-nextauth.netlify.app/',
+		repo: 'https://github.com/frontendjess/js-frameworks-ca-jessica-nextjs',
+		featuredImage: '/images/featuredimage/project-javascriptframeworks.png',
+		gallery: [
+			{
+				link: '/images/gallery/5/javascriptframeworks-specificemployee.png',
+				id: 1,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-nextjs.png',
+				id: 2,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-formik.png',
+				id: 3,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-nextauth.png',
+				id: 4,
+			},
+			{
+				link: '/images/gallery/5/javascriptframeworks-netlify.png',
+				id: 5,
+			},
+		],
+		statusComplete: true,
+		objectivesCap:
+			'One of my school projects, for JavaScript Frameworks course assignment. The focus for this project was entirly code based and no styling. :)',
+		objectivesDetails:
+			'I built my project in Next.js, bootstrapped with create-next-app, hard-coded JSON, used Formik and NextAuth for login. Deployed live website on Netlify. The objectives were to showcase our understanding of paths, client-side authentication, fetching API data. I based my project around admin for a medical clinic employees list.',
 	},
 ];
 

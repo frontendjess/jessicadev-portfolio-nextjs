@@ -61,10 +61,36 @@ export default function Project({ projectData }) {
 							<ProjectDetailsCol>
 								<p>Project type: {projectData.projecttype}</p>
 								<p>Tech: {techstackText}</p>
+								<p>
+									Live website:{' '}
+									<Link href={projectData.url}>
+										<a className='specific-projects-link'>
+											Project website/demo
+										</a>
+									</Link>
+								</p>
 							</ProjectDetailsCol>
 							<ProjectDetailsCol>
 								<p>Client: {projectData.companyname}</p>
 								<p>Date: {projectData.date}</p>
+								<p>
+									Github Repo:{' '}
+									{(() => {
+										if (projectData.repo) {
+											return (
+												<Link href={projectData.repo}>
+													<a className='specific-projects-link'>
+														{projectData.repo}
+													</a>
+												</Link>
+											);
+										} else {
+											return <span>Not available for this project</span>;
+										}
+
+										return null;
+									})()}
+								</p>
 							</ProjectDetailsCol>
 						</ProjectDetailsContainer>
 						<div className='section'>
@@ -85,12 +111,6 @@ export default function Project({ projectData }) {
 									<ProjectObjectivesDetailsText>
 										{projectData.objectivesDetails}
 									</ProjectObjectivesDetailsText>
-									<br />
-									<Link href={projectData.url}>
-										<a className='specific-projects-link'>
-											Project website/demo
-										</a>
-									</Link>
 								</ProjectObjectivesDetails>
 							</ProjectObjectivesCol>
 						</ProjectObjectives>
