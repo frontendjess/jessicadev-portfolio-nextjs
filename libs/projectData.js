@@ -155,39 +155,39 @@ const listOfProjects = [
 		pid: '5',
 		title: 'Curated Hotels Booking Website',
 		companyname: 'School Project',
-		date: 'March 2022',
+		date: 'June 2022',
 		projecttype: 'Design + Development',
 		techstack: ['Next.Js', 'Strapi', 'Heroku', 'Styled-Components'],
-		url: 'https://jessica-nextjs-nextauth.netlify.app/',
-		repo: 'https://github.com/frontendjess/js-frameworks-ca-jessica-nextjs',
-		featuredImage: '/images/featuredimage/project-javascriptframeworks.png',
+		url: 'https://holidazefortheurbantraveler.netlify.app/',
+		repo: 'https://github.com/frontendjess/jessica-hotels-exam-project-nextjs',
+		featuredImage: '/images/featuredimage/project-holidaze.png',
 		gallery: [
 			{
-				link: '/images/gallery/5/javascriptframeworks-specificemployee.png',
+				link: '/images/gallery/5/hotelsnextjs-moodboard.png',
 				id: 1,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-nextjs.png',
+				link: '/images/gallery/5/hotelsnextjs-branding.png',
 				id: 2,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-formik.png',
+				link: '/images/gallery/5/hotelsnextjs-details.png',
 				id: 3,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-nextauth.png',
+				link: '/images/gallery/5/hotelsnextjs-specifichotel.png',
 				id: 4,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-netlify.png',
+				link: '/images/gallery/5/hotelsnextjs-admin.png',
 				id: 5,
 			},
 		],
 		statusComplete: true,
 		objectivesCap:
-			'One of my school projects, for JavaScript Frameworks course assignment. The focus for this project was entirly code based and no styling. :)',
+			"A case study to make a hotel booking website. Concept: Curated collection of hotels for the urban traveler. Merging the golden era of travel with today's innovation, sustainability, authenticity and comfort.",
 		objectivesDetails:
-			'I built my project in Next.js, bootstrapped with create-next-app, hard-coded JSON, used Formik and NextAuth for login. Deployed live website on Netlify. The objectives were to showcase our understanding of paths, client-side authentication, fetching API data. I based my project around admin for a medical clinic employees list.',
+			'Goal: To take the skills learned over the last 2 years and take on an extensive project where the finished product should reflect our general development capabilities, in addition to visual and technical skills. Website is fully responsive. There are both visitor section and admin section.',
 	},
 	{
 		pid: '6',
@@ -201,23 +201,23 @@ const listOfProjects = [
 		featuredImage: '/images/featuredimage/project-javascriptframeworks.png',
 		gallery: [
 			{
-				link: '/images/gallery/5/javascriptframeworks-specificemployee.png',
+				link: '/images/gallery/6/javascriptframeworks-specificemployee.png',
 				id: 1,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-nextjs.png',
+				link: '/images/gallery/6/javascriptframeworks-nextjs.png',
 				id: 2,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-formik.png',
+				link: '/images/gallery/6/javascriptframeworks-formik.png',
 				id: 3,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-nextauth.png',
+				link: '/images/gallery/6/javascriptframeworks-nextauth.png',
 				id: 4,
 			},
 			{
-				link: '/images/gallery/5/javascriptframeworks-netlify.png',
+				link: '/images/gallery/6/javascriptframeworks-netlify.png',
 				id: 5,
 			},
 		],
