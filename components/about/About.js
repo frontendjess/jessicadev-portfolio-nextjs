@@ -11,7 +11,6 @@ import {
     AboutMeText,
     AboutMeRowBtm,
 } from "./AboutElements";
-import Image from "next/image";
 
 const About = () => {
     return (
@@ -29,12 +28,7 @@ const About = () => {
                     <AboutMeInspoText>
                         <p>THE INSPIRATION AND MOTIVATION BEHIND JESSICA</p>
                         <PinkStar>
-                            <Image
-                                src="/images/star.png"
-                                alt="star graphic"
-                                width={100}
-                                height={100}
-                            />
+                            <img src="/images/star.png" alt="star graphic" />
                         </PinkStar>
                     </AboutMeInspoText>
                 </AboutMeTextContainer>

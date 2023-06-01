@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
     SidebarContainer,
     CloseIcon,
@@ -55,12 +54,10 @@ const Sidebar = ({ isOpen, toggle }) => {
                             onClick={toggle}
                             passHref
                         >
-                            <Image
+                            <img
                                 className="navbar-email-icon"
                                 alt="email icon"
                                 src="/images/email.png"
-                                width={44}
-                                height={34}
                             />
                         </Link>
                     </SidebarLink>

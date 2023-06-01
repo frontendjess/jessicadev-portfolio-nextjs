@@ -26,7 +26,6 @@ import { useState } from "react";
 import Link from "next/link";
 
 import listOfProjects from "../../libs/projectData";
-import Image from "next/image";
 
 export default function Project({ projectData }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -106,11 +105,9 @@ export default function Project({ projectData }) {
                         <div className="section">
                             {" "}
                             <ImageWrapper>
-                                <Image
+                                <img
                                     src={projectData.featuredImage}
                                     alt={projectData.title}
-                                    width={1728}
-                                    height={1117}
                                 />
                             </ImageWrapper>
                         </div>
@@ -133,11 +130,9 @@ export default function Project({ projectData }) {
                         {projectData.gallery.map((galleryImage, index) => (
                             <div key={index} className="section">
                                 <ImageWrapper>
-                                    <Image
+                                    <img
                                         src={galleryImage.link}
                                         alt={projectData.title}
-                                        width={1728}
-                                        height={1117}
                                     />
                                 </ImageWrapper>
                             </div>
