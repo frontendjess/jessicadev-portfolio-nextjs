@@ -130,7 +130,9 @@ const FooterCTA = () => {
                         <p className="italic">Like what you see?</p>
                         <p>
                             I designed my portfolio and developed it in Next.js
-                            in Feb 2022 while I was in school 🪄 -{" "}
+                            in Feb 2022 while I was in school 🪄 -
+                        </p>
+                        <p>
                             <span className="italic">
                                 New version with Svelte & Sanity coming soon
                             </span>{" "}
