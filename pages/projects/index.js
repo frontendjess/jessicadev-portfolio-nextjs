@@ -12,7 +12,6 @@ import { useState } from "react";
 import Link from "next/link";
 
 import listOfProjects from "../../libs/projectData";
-import Image from "next/image";
 
 const ProjectsHeading = styled.div`
     display: flex;
@@ -49,11 +48,9 @@ export default function Projects() {
                     <div className="section all-projects-container">
                         {listOfProjects.map((project) => (
                             <div className="all-projects-col" key={project.pid}>
-                                <Image
+                                <img
                                     src={project.featuredImage}
                                     alt="projects image"
-                                    width={1728}
-                                    height={1117}
                                 />
                                 <p className="all-projects-title">
                                     {project.title}
@@ -80,11 +77,9 @@ export default function Projects() {
 
                     <div className="section-padding-btm all-projects-container">
                         <div className="all-projects-col">
-                            <Image
+                            <img
                                 src="/images/featuredimage/project-gimpville.png"
                                 alt="projects image"
-                                width={1728}
-                                height={1117}
                             />
                             <p className="all-projects-title">
                                 Animations Studio Website

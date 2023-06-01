@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styled, { keyframes } from "styled-components";
 import media from "styled-media-query";
 
@@ -54,21 +53,11 @@ const Rotatinggimmick = () => {
     return (
         <Container>
             <OuterCircle>
-                <Image
-                    src="/images/outercircle.png"
-                    alt="work with me"
-                    width={328}
-                    height={328}
-                />
+                <img src="/images/outercircle.png" alt="work with me" />
             </OuterCircle>
             <InnerCircle>
                 <a href="mailto:hello@jessicadev.com">
-                    <Image
-                        src="/images/innercircle.png"
-                        alt="email"
-                        width={68}
-                        height={52}
-                    />
+                    <img src="/images/innercircle.png" alt="email" />
                 </a>
             </InnerCircle>
         </Container>

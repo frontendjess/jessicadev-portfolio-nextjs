@@ -3,7 +3,6 @@ import Link from "next/link";
 import media from "styled-media-query";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltUp } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
 
 const FooterContainer = styled.footer`
     width: 100%;
@@ -42,12 +41,7 @@ const BuildMagicTogether = () => {
                 some magic together
             </BuildMagicTogetherText>
             <IconArrow>
-                <Image
-                    src="/images/icon-arrow-down-left.svg"
-                    alt="arrow"
-                    width={169}
-                    height={169}
-                />
+                <img src="/images/icon-arrow-down-left.svg" alt="arrow" />
             </IconArrow>
         </div>
     );
@@ -172,75 +166,35 @@ const WorkWithMe = () => {
                 <div className="marquee-wrapper">
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                     <div className="marquee-title">
                         <span className="marquee-font"> WORK WITH ME </span>
-                        <Image
-                            src="/images/star.png"
-                            alt="star"
-                            width={100}
-                            height={100}
-                        />
+                        <img src="/images/star.png" alt="star" />
                     </div>
                 </div>
             </div>

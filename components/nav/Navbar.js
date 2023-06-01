@@ -1,7 +1,6 @@
 import Link from "next/link";
 import FaBarsIcon from "./FaBarsIcon";
 import { Navlinks, NavLink, Logo, MobileIcon } from "./NavbarElements";
-import Image from "next/image";
 
 const Navbar = ({ toggle }) => {
     return (
@@ -11,11 +10,9 @@ const Navbar = ({ toggle }) => {
                     {" "}
                     <Link href="/">
                         <a className="logo-link">
-                            <Image
+                            <img
                                 src="/images/logo.svg"
                                 alt="Jesscicadev logo"
-                                width={270}
-                                height={116}
                             />
                         </a>
                     </Link>
@@ -46,12 +43,10 @@ const Navbar = ({ toggle }) => {
                         href="mailto:hello@jessicadev.com"
                         passHref
                     >
-                        <Image
+                        <img
                             className="navbar-email-icon"
                             src="/images/email.png"
                             alt="email icon"
-                            width={44}
-                            height={34}
                         />
                     </Link>
                 </NavLink>

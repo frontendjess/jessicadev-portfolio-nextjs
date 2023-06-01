@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import media from "styled-media-query";
 import Link from "next/link";
-import Image from "next/image";
 
 const GoBackContainer = styled.div`
     display: flex;
@@ -125,11 +124,9 @@ const GoBack = () => {
         <div className="section-padding-top">
             <GoBackContainer>
                 <GoBackCol1>
-                    <Image
+                    <img
                         src="../images/icon-go-back.svg"
                         alt="go back arrow icon"
-                        width={169}
-                        height={169}
                     />
                 </GoBackCol1>
                 <GoBackCol2>
