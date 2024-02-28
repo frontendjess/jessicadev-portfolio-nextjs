@@ -1,24 +1,24 @@
-import styled from "styled-components";
-import Link from "next/link";
-import media from "styled-media-query";
+import styled from 'styled-components'
+import Link from 'next/link'
+import media from 'styled-media-query'
 
 const RecentWorkTitle = () => {
-    return <p>SELECTED MOST RECENT WORK</p>;
-};
+    return <p>SELECTED MOST RECENT WORK</p>
+}
 
 const RecentWorkDetails = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-`;
+`
 
 const Section = styled.section`
     padding: 100px 0;
 
-    ${media.lessThan("large")`
+    ${media.lessThan('large')`
 		padding: 200px 0 100px 0;
 	`}
-`;
+`
 
 const RecentWork = () => {
     return (
@@ -29,18 +29,41 @@ const RecentWork = () => {
                     <RecentWorkDetails>
                         <img
                             className="mockup-image"
-                            src="/images/selectedworks/noanorge-mockup.png"
-                            alt="Noanorge client work mockup"
+                            src="/images/selectedworks/banenor-mockup.png"
+                            alt="Client work mockup"
                         />
 
                         <Link href="/projects/1">
                             <a className="project-link">
-                                01.{" "}
+                                01.{' '}
                                 <span className="project-type-text">
                                     [ Development ]
-                                </span>{" "}
-                                Noanorge.no - Next.js + Sanity + Tailwind
-                                website
+                                </span>{' '}
+                                Bane NOR Wiki & Portals - HTML + SCSS +
+                                JavaScript / TypeScript + Optimizely / Razor C#
+                                Website
+                            </a>
+                        </Link>
+                    </RecentWorkDetails>
+                </div>
+
+                <div className="inner-content-padding">
+                    <RecentWorkDetails>
+                        <img
+                            className="mockup-image"
+                            src="/images/selectedworks/bama-gruppen-mockup.png"
+                            alt="Client work mockup"
+                        />
+
+                        <Link href="/projects/2">
+                            <a className="project-link">
+                                02.{' '}
+                                <span className="project-type-text">
+                                    [ Development ]
+                                </span>{' '}
+                                Bama Gruppen Transportation Optimization -
+                                Next.Js + Storybook + Tailwind + GraphQL +
+                                Apollo + TurboRepo Web Application
                             </a>
                         </Link>
                     </RecentWorkDetails>
@@ -56,33 +79,12 @@ const RecentWork = () => {
 
                         <Link href="/projects/4">
                             <a className="project-link">
-                                02.{" "}
+                                02.{' '}
                                 <span className="project-type-text">
                                     [ Development ]
-                                </span>{" "}
+                                </span>{' '}
                                 Øya X Fretex - Next.js + Tailwind + Framer
                                 Motion Website
-                            </a>
-                        </Link>
-                    </RecentWorkDetails>
-                </div>
-
-                <div className="inner-content-padding">
-                    <RecentWorkDetails>
-                        <img
-                            className="mockup-image"
-                            src="/images/selectedworks/tgp-mockup.png"
-                            alt="Client work mockup"
-                        />
-
-                        <Link href="/projects/4">
-                            <a className="project-link">
-                                02.{" "}
-                                <span className="project-type-text">
-                                    [ Design + Dev]
-                                </span>{" "}
-                                The Garden Party - Designs & Productions Studio
-                                Website
                             </a>
                         </Link>
                     </RecentWorkDetails>
@@ -116,7 +118,7 @@ const RecentWork = () => {
                 </div>
             </Section>
         </>
-    );
-};
+    )
+}
 
-export default RecentWork;
+export default RecentWork

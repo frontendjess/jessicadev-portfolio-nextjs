@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import media from 'styled-media-query';
+import { createGlobalStyle } from 'styled-components'
+import media from 'styled-media-query'
 
 const GlobalStyle = createGlobalStyle`
     :root {
@@ -198,6 +198,22 @@ const GlobalStyle = createGlobalStyle`
         padding-bottom: 25px;
     }
 
+    .inner-content-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 25px;
+
+        ${media.greaterThan('large')`
+            flex-direction: row;
+            gap: 32px;
+        `}
+    }
+
+    .inner-content-grid {
+        display: grid;
+    }
+
     /* ICONS */
     .navbar-email-icon {
         &:hover {
@@ -225,14 +241,19 @@ const GlobalStyle = createGlobalStyle`
 
     .project-link {
         padding: 25px 0;
-        font-size: var(--h4-size);
-        letter-spacing: var(--letter-spacing-lg);
+        font-size: var(--h5-size);
+        letter-spacing: var(--letter-spacing-md);
         font-weight: var(--font-weight-bold);
         text-decoration: none;
         &:hover {
             background-color: var(--color-black);
             color: var(--color-white);
         }
+
+        ${media.greaterThan('large')`
+            font-size: var(--h4-size);
+            letter-spacing: var(--letter-spacing-lg);
+        `}
     }
 
     .projects-text-link {
@@ -408,6 +429,6 @@ const GlobalStyle = createGlobalStyle`
         }
       }
     
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

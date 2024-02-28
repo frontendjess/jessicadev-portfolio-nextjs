@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import media from "styled-media-query";
+import styled, { keyframes } from 'styled-components'
+import media from 'styled-media-query'
 
 const rotate = keyframes`
   from {
@@ -9,7 +9,7 @@ const rotate = keyframes`
   to {
     transform: rotate(360deg);
   }
-`;
+`
 
 const Container = styled.div`
     max-width: 150px;
@@ -19,10 +19,10 @@ const Container = styled.div`
     align-items: center;
     position: relative;
 
-    ${media.greaterThan("small")`
+    ${media.greaterThan('small')`
         max-width: 180px;
     `}
-`;
+`
 
 const OuterCircle = styled.div`
     width: 100%;
@@ -31,7 +31,7 @@ const OuterCircle = styled.div`
     img {
         width: 100%;
     }
-`;
+`
 
 const InnerCircle = styled.div`
     position: absolute;
@@ -47,7 +47,7 @@ const InnerCircle = styled.div`
     img {
         width: 100%;
     }
-`;
+`
 
 const Rotatinggimmick = () => {
     return (
@@ -61,7 +61,7 @@ const Rotatinggimmick = () => {
                 </a>
             </InnerCircle>
         </Container>
-    );
-};
+    )
+}
 
-export default Rotatinggimmick;
+export default Rotatinggimmick

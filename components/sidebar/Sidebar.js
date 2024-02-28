@@ -5,8 +5,8 @@ import {
     SidebarWrapper,
     SidebarLink,
     SidebarMenu,
-} from "./SidebarElements";
-import Link from "next/link";
+} from './SidebarElements'
+import Link from 'next/link'
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
@@ -64,7 +64,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
-    );
-};
+    )
+}
 
-export default Sidebar;
+export default Sidebar
