@@ -106,7 +106,7 @@ const RecentWork = () => {
                         <div className="inner-content-padding-btm">
                             <a
                                 className="projects-text-link"
-                                href="mailto:hello@jessicadev.com"
+                                href="mailto:iamjessicawarr@gmail.com"
                             >
                                 Or get in touch with me
                             </a>

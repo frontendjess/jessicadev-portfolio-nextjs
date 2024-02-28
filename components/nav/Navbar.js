@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
                 <NavLink>
                     <Link
                         className="nav-link"
-                        href="mailto:hello@jessicadev.com"
+                        href="mailto:iamjessicawarr@gmail.com"
                         passHref
                     >
                         <img

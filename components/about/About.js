@@ -114,7 +114,7 @@ const About = () => {
                             management, as well as engaging platforms with rich
                             visual designs. For a full view of my professional
                             journey or to delve into my technical writings,{' '}
-                            <Link href="mailto:hello@jessicadev.com">
+                            <Link href="mailto:iamjessicawarr@gmail.com">
                                 <a>reach out to me</a>
                             </Link>{' '}
                             for my CV or visit my{' '}
@@ -298,7 +298,7 @@ const About = () => {
 
                         <p className="inner-content-padding-sm-btm">
                             Let&apos;s{' '}
-                            <Link href="mailto:hello@jessicadev.com">
+                            <Link href="mailto:iamjessicawarr@gmail.com">
                                 <a> Connect</a>
                             </Link>{' '}
                             |{' '}
@@ -319,7 +319,7 @@ const About = () => {
                             As my focus is on my projects and delivery, my
                             portfolio may not be always up to date so feel free
                             to{' '}
-                            <Link href="mailto:hello@jessicadev.com">
+                            <Link href="mailto:iamjessicawarr@gmail.com">
                                 <a>email me</a>
                             </Link>{' '}
                             for an updated CV and project references.

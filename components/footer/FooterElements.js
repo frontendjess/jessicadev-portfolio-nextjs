@@ -104,7 +104,7 @@ const FooterCTA = () => {
             <FooterRow>
                 <FooterCol>
                     <div className="inner-content-padding-sm-btm">
-                        <Link href="mailto:hello@jessicadev.com">
+                        <Link href="mailto:iamjessicawarr@gmail.com">
                             <a>EMAIL</a>
                         </Link>
                     </div>
