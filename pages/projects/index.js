@@ -75,10 +75,10 @@ export default function Projects() {
     return (
         <>
             <Head>
-                <title>Jessicadev Portfolio Website</title>
+                <title>Jessica Warr Portfolio Website</title>
                 <meta
                     name="description"
-                    content="Jessicadev.com Portfolio Website"
+                    content="Jessicawarr.com Portfolio Website"
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

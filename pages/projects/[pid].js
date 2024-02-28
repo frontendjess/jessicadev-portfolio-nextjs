@@ -41,7 +41,7 @@ export default function Project({ projectData }) {
     return (
         <>
             <Head>
-                <title>Jessicadev - {projectData.title}</title>
+                <title>Jessicawarr - {projectData.title}</title>
                 <meta name="description" content={projectData.title} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>

@@ -49,7 +49,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink>
                         <Link
                             className="nav-link"
-                            href="mailto:hello@jessicadev.com"
+                            href="mailto:iamjessicawarr@gmail.com"
                             isOpen={isOpen}
                             onClick={toggle}
                             passHref

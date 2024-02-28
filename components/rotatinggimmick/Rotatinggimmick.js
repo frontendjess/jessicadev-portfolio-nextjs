@@ -56,7 +56,7 @@ const Rotatinggimmick = () => {
                 <img src="/images/outercircle.png" alt="work with me" />
             </OuterCircle>
             <InnerCircle>
-                <a href="mailto:hello@jessicadev.com">
+                <a href="mailto:iamjessicawarr@gmail.com">
                     <img src="/images/innercircle.png" alt="email" />
                 </a>
             </InnerCircle>
