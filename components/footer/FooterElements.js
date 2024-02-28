@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import Link from "next/link";
-import media from "styled-media-query";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLongArrowAltUp } from "@fortawesome/free-solid-svg-icons";
+import styled from 'styled-components'
+import Link from 'next/link'
+import media from 'styled-media-query'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons'
 
 const FooterContainer = styled.footer`
     width: 100%;
-`;
+`
 
 const BuildMagicTogetherText = styled.h3`
     font-family: var(--font-headings);
@@ -16,27 +16,27 @@ const BuildMagicTogetherText = styled.h3`
     line-height: var(--line-height-xl);
     text-shadow: 2px 2px 2px var(--color-tertiary);
 
-    ${media.lessThan("medium")`
+    ${media.lessThan('medium')`
 		font-size: var(--h4-size);
 		letter-spacing: var(--letter-spacing-lg);
 		line-height: var(--line-height-lg);
 	`}
-`;
+`
 
 const IconArrow = styled.div`
     display: flex;
     justify-content: center;
 
-    ${media.lessThan("medium")`
+    ${media.lessThan('medium')`
 		padding-left: 40px;
 	`}
-`;
+`
 
 const BuildMagicTogether = () => {
     return (
         <div className="section-padding-top">
             <BuildMagicTogetherText>
-                Now that you know who I am, let&apos;s{" "}
+                Now that you know who I am, let&apos;s{' '}
                 <span className="secondary-text-color">dream big</span> & build
                 some magic together
             </BuildMagicTogetherText>
@@ -44,19 +44,19 @@ const BuildMagicTogether = () => {
                 <img src="/images/icon-arrow-down-left.svg" alt="arrow" />
             </IconArrow>
         </div>
-    );
-};
+    )
+}
 
 const FooterRow = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    ${media.lessThan("medium")`
+    ${media.lessThan('medium')`
 	flex-direction: column;
 		flex-wrap: wrap;
 	`}
-`;
+`
 
 const FooterCol = styled.div`
     flex: 0 0 50%;
@@ -67,7 +67,7 @@ const FooterCol = styled.div`
         letter-spacing: var(--letter-spacing-md);
         font-weight: var(--font-weight-reg);
     }
-`;
+`
 
 const FooterAboutText = styled.div`
     text-align: right;
@@ -76,11 +76,11 @@ const FooterAboutText = styled.div`
     letter-spacing: var(--letter-spacing-size);
     line-height: var(--line-height-size);
 
-    ${media.lessThan("medium")`
+    ${media.lessThan('medium')`
 		padding-top: 50px;
 		text-align: left;
 	`}
-`;
+`
 
 const FooterBtmCol = styled.div`
     flex: 0 0 50%;
@@ -93,10 +93,10 @@ const FooterBtmCol = styled.div`
         text-transform: uppercase;
     }
 
-    ${media.lessThan("medium")`
+    ${media.lessThan('medium')`
 		padding-bottom: 25px;
 	`}
-`;
+`
 
 const FooterCTA = () => {
     return (
@@ -129,15 +129,15 @@ const FooterCTA = () => {
                         <p>
                             <span className="italic">
                                 New version with Svelte & Sanity coming soon
-                            </span>{" "}
+                            </span>{' '}
                             👩🏽‍💻
                         </p>
                     </FooterAboutText>
                 </FooterCol>
             </FooterRow>
         </div>
-    );
-};
+    )
+}
 
 const FooterBottom = () => {
     return (
@@ -146,7 +146,7 @@ const FooterBottom = () => {
                 <FooterBtmCol>
                     <Link href="#Topofpage">
                         <a>
-                            Back to top{" "}
+                            Back to top{' '}
                             <FontAwesomeIcon icon={faLongArrowAltUp} />
                         </a>
                     </Link>
@@ -156,8 +156,8 @@ const FooterBottom = () => {
                 </FooterBtmCol>
             </FooterRow>
         </div>
-    );
-};
+    )
+}
 
 const WorkWithMe = () => {
     return (
@@ -199,8 +199,8 @@ const WorkWithMe = () => {
                 </div>
             </div>
         </>
-    );
-};
+    )
+}
 
 export {
     FooterContainer,
@@ -208,4 +208,4 @@ export {
     WorkWithMe,
     FooterCTA,
     FooterBottom,
-};
+}

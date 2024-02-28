@@ -1,11 +1,11 @@
-import Head from "next/head";
+import Head from 'next/head'
 
-import Body from "../../components/body/Body";
-import Header from "../../components/header/Header";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Navbar from "../../components/nav/Navbar";
-import Main from "../../components/main/Main";
-import Footer from "../../components/footer/Footer";
+import Body from '../../components/body/Body'
+import Header from '../../components/header/Header'
+import Sidebar from '../../components/sidebar/Sidebar'
+import Navbar from '../../components/nav/Navbar'
+import Main from '../../components/main/Main'
+import Footer from '../../components/footer/Footer'
 
 import {
     ProjectContainer,
@@ -19,24 +19,24 @@ import {
     ProjectObjectivesDetails,
     ProjectObjectivesDetailsText,
     GoBack,
-} from "../../components/projects/projectsElements";
+} from '../../components/projects/projectsElements'
 
-import { useState } from "react";
+import { useState } from 'react'
 
-import Link from "next/link";
+import Link from 'next/link'
 
-import listOfProjects from "../../libs/projectData";
+import listOfProjects from '../../libs/projectData'
 
 export default function Project({ projectData }) {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
-        setIsOpen(!isOpen);
-    };
+        setIsOpen(!isOpen)
+    }
 
-    console.log(projectData);
+    console.log(projectData)
 
-    const techstackText = projectData.techstack.join(" ");
+    const techstackText = projectData.techstack.join(' ')
 
     return (
         <>
@@ -59,26 +59,71 @@ export default function Project({ projectData }) {
 
                         <ProjectDetailsContainer>
                             <ProjectDetailsCol>
-                                <p>Project type: {projectData.projecttype}</p>
-                                <p>Tech: {techstackText}</p>
                                 <p>
-                                    Live website:{" "}
-                                    <Link href={projectData.url}>
-                                        <a
-                                            className="specific-projects-link"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                        >
-                                            Project website/demo
-                                        </a>
-                                    </Link>
+                                    <span className="secondary-text-color">
+                                        Project type:
+                                    </span>{' '}
+                                    {projectData.projecttype}
                                 </p>
+                                <p>
+                                    <span className="secondary-text-color">
+                                        Tech:
+                                    </span>{' '}
+                                    {techstackText}
+                                </p>
+                                <p>
+                                    <span className="secondary-text-color">
+                                        Live website:
+                                    </span>{' '}
+                                    {projectData.url ? (
+                                        <Link href={projectData.url}>
+                                            <a
+                                                className="specific-projects-link"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
+                                                Visit the project website/demo
+                                            </a>
+                                        </Link>
+                                    ) : projectData.isInternal ? (
+                                        <span>
+                                            Private client project - Access
+                                            restricted to internal use
+                                        </span>
+                                    ) : (
+                                        <span>
+                                            Website launch pending - Check back
+                                            soon for updates!
+                                        </span>
+                                    )}
+                                </p>
+                                {projectData.awards &&
+                                    projectData.awards.length > 0 && (
+                                        <p>
+                                            <span className="secondary-text-color">
+                                                Awards:
+                                            </span>{' '}
+                                            {projectData.awards.join(', ')}
+                                        </p>
+                                    )}
                             </ProjectDetailsCol>
                             <ProjectDetailsCol>
-                                <p>Client: {projectData.companyname}</p>
-                                <p>Date: {projectData.date}</p>
                                 <p>
-                                    Github Repo:{" "}
+                                    <span className="secondary-text-color">
+                                        Client:
+                                    </span>{' '}
+                                    {projectData.companyname}
+                                </p>
+                                <p>
+                                    <span className="secondary-text-color">
+                                        Date:
+                                    </span>{' '}
+                                    {projectData.date}
+                                </p>
+                                <p>
+                                    <span className="secondary-text-color">
+                                        Github Repo:
+                                    </span>{' '}
                                     {(() => {
                                         if (projectData.repo) {
                                             return (
@@ -87,23 +132,23 @@ export default function Project({ projectData }) {
                                                         {projectData.repo}
                                                     </a>
                                                 </Link>
-                                            );
+                                            )
                                         } else {
                                             return (
                                                 <span>
                                                     Not available for this
                                                     project
                                                 </span>
-                                            );
+                                            )
                                         }
 
-                                        return null;
+                                        return null
                                     })()}
                                 </p>
                             </ProjectDetailsCol>
                         </ProjectDetailsContainer>
                         <div className="section">
-                            {" "}
+                            {' '}
                             <ImageWrapper>
                                 <img
                                     src={projectData.featuredImage}
@@ -143,7 +188,7 @@ export default function Project({ projectData }) {
                 <Footer id="Footer"></Footer>
             </Body>
         </>
-    );
+    )
 }
 
 export async function getStaticPaths() {
@@ -153,17 +198,17 @@ export async function getStaticPaths() {
             params: {
                 pid: project.pid,
             },
-        };
-    });
-    return { paths, fallback: false };
+        }
+    })
+    return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
     // Fetch necessary data for the blog post using params.id
-    const projectData = getProjectData(params.pid);
-    return { props: { projectData } };
+    const projectData = getProjectData(params.pid)
+    return { props: { projectData } }
 }
 
 function getProjectData(pid) {
-    return listOfProjects.find((project) => project.pid === pid);
+    return listOfProjects.find((project) => project.pid === pid)
 }

@@ -14,10 +14,10 @@ This personal portfolio was a course assignment for school, and our brief was to
 
 My project was built in Next.js, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), and I used Styled-Components and Styled-Media-Query for styling and breakpoints.
 
-- [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
-- [Styled-Components](https://styled-components.com/)
-- [Styled-Media-Query](https://www.npmjs.com/package/styled-media-query)
+-   [Next.js](https://nextjs.org/)
+-   [React.js](https://reactjs.org/)
+-   [Styled-Components](https://styled-components.com/)
+-   [Styled-Media-Query](https://www.npmjs.com/package/styled-media-query)
 
 ## Getting Started
 

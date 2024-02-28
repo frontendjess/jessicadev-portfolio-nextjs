@@ -1,13 +1,13 @@
-import Link from "next/link";
-import FaBarsIcon from "./FaBarsIcon";
-import { Navlinks, NavLink, Logo, MobileIcon } from "./NavbarElements";
+import Link from 'next/link'
+import FaBarsIcon from './FaBarsIcon'
+import { Navlinks, NavLink, Logo, MobileIcon } from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
     return (
         <>
             <div>
                 <Logo>
-                    {" "}
+                    {' '}
                     <Link href="/">
                         <a className="logo-link">
                             <img
@@ -52,7 +52,7 @@ const Navbar = ({ toggle }) => {
                 </NavLink>
             </Navlinks>
         </>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar
