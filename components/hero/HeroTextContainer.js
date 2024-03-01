@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { useState } from 'react'
 import media from 'styled-media-query'
+import Tooltip from '../tooltip/Tooltip'
 
 const HeroText = styled.div`
     font-family: var(--font-headings);
@@ -56,9 +57,11 @@ const HeroTextContainer = () => {
                     </span>
                 )}
             </HeroText>
-            <p className="tell-me-more" onClick={() => setIsOpen(!isOpen)}>
-                &#123; TELL ME MORE &#125;
-            </p>
+            <Tooltip text="Click me ⬇" fontSize="var(--font-size-sm)">
+                <p className="tell-me-more" onClick={() => setIsOpen(!isOpen)}>
+                    &#123; TELL ME MORE &#125;
+                </p>
+            </Tooltip>
         </Wrapper>
     )
 }

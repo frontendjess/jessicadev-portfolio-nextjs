@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import RotatingGimmick from './../rotatinggimmick/Rotatinggimmick'
 import media from 'styled-media-query'
+import Tooltip from '../tooltip/Tooltip'
 
 const HeroTitle = styled.h1`
     font-family: var(--font-headings);
@@ -56,8 +57,12 @@ const WrapperRotatingGimmick = styled.div`
 const HeroTitleContainer = () => {
     return (
         <Wrapper>
-            <HeroTitle>Jessica Warr</HeroTitle>
-
+            <Tooltip
+                text="Welcome to my creative visual portfolio 🥰 (I like to believe it is haha). I come with a business and front end development background, I like to think I have an entrepreneurial mindset and I love being creative in the digital world. But my true joy is working in the 'back of the front'. I am an American Norwegian based in Oslo. 👩🏽‍💻🔮🪄💖🇺🇸🇳🇴"
+                fontSize="small"
+            >
+                <HeroTitle>Jessica Warr</HeroTitle>
+            </Tooltip>
             <WrapperRotatingGimmick>
                 {' '}
                 <RotatingGimmick />

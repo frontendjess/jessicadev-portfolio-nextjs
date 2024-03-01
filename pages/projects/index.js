@@ -13,6 +13,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 import listOfProjects from '../../libs/projectData'
+import Tooltip from '../../components/tooltip/Tooltip'
 
 const ProjectsHeading = styled.div`
     display: flex;
@@ -38,10 +39,10 @@ const FilterButton = styled.button`
     font-size: 18px;
     letter-spacing: 1.8px;
     padding: 10px 20px;
-    margin: 0 10px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    width: 100%;
 
     &:hover {
         color: var(--color-white);
@@ -70,6 +71,9 @@ export default function Projects() {
         if (filter === 'all') return true
         if (filter === 'professional') return project.isProfessional
         if (filter === 'educational') return !project.isProfessional
+        if (filter === 'awards') {
+            return project.awards && project.awards.length > 0
+        }
     })
 
     return (
@@ -90,29 +94,51 @@ export default function Projects() {
                 </Header>
                 <Main>
                     <ProjectsHeading id="Topofpage">
-                        <h1>ALL WORKS</h1>
+                        <Tooltip text="Not all my professional projects are included on my works list, such as the flooring service pilot project for Coop Obs Bygg - please refer to my linkedIn or email me for a full CV 💌" tooltipAlign="right">   
+                            <h1>ALL WORKS</h1>
+                        </Tooltip>
                     </ProjectsHeading>
                     <FilterContainer>
-                        <FilterButton
-                            onClick={() => handleFilterChange('all')}
-                            className={filter === 'all' ? 'active' : ''}
-                        >
-                            {'{ All Projects }'}
-                        </FilterButton>
-                        <FilterButton
-                            onClick={() => handleFilterChange('professional')}
-                            className={
-                                filter === 'professional' ? 'active' : ''
-                            }
-                        >
-                            {'{ Professional }'}
-                        </FilterButton>
-                        <FilterButton
-                            onClick={() => handleFilterChange('educational')}
-                            className={filter === 'educational' ? 'active' : ''}
-                        >
-                            {'{ Educational }'}
-                        </FilterButton>
+                        <Tooltip text="🫶🏽" marginLeft="filter">
+                            <FilterButton
+                                onClick={() => handleFilterChange('all')}
+                                className={filter === 'all' ? 'active' : ''}
+                            >
+                                {'{ All Projects }'}
+                            </FilterButton>
+                        </Tooltip>
+                        <Tooltip text="👩🏽‍💻" marginLeft="filter">
+                            <FilterButton
+                                onClick={() =>
+                                    handleFilterChange('professional')
+                                }
+                                className={
+                                    filter === 'professional' ? 'active' : ''
+                                }
+                            >
+                                {'{ Professional }'}
+                            </FilterButton>
+                        </Tooltip>
+                        <Tooltip text="📚" marginLeft="filter">
+                            <FilterButton
+                                onClick={() =>
+                                    handleFilterChange('educational')
+                                }
+                                className={
+                                    filter === 'educational' ? 'active' : ''
+                                }
+                            >
+                                {'{ Educational }'}
+                            </FilterButton>
+                        </Tooltip>
+                        <Tooltip text="🏆" marginLeft="filter">
+                            <FilterButton
+                                onClick={() => handleFilterChange('awards')}
+                                className={filter === 'awards' ? 'active' : ''}
+                            >
+                                {'{ With Awards }'}
+                            </FilterButton>
+                        </Tooltip>
                     </FilterContainer>
                     <div className="section all-projects-container">
                         {filteredProjects.map((project) => (
