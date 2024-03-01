@@ -9,7 +9,6 @@ import listOfCourses from '../../libs/coursesData'
 import media from 'styled-media-query'
 import { useState } from 'react'
 
-
 const CoursesContainer = styled.div`
     padding: 2rem;
     display: flex;
@@ -23,11 +22,9 @@ const CoursesContainer = styled.div`
     text-transform: uppercase;
 `
 
-const CourseDate = styled.p`
-`
+const CourseDate = styled.p``
 
-const CourseDescription = styled.p`
-`
+const CourseDescription = styled.p``
 
 const CourseItem = styled.div`
     background-color: #f8f8f8;
@@ -43,13 +40,11 @@ const CourseItem = styled.div`
     `}
 `
 
-const CourseLecturer = styled.p`
-`
+const CourseLecturer = styled.p``
 
 const CourseTitle = styled.p`
     font-weight: bold;
 `
-
 
 const MyCourses = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -75,7 +70,10 @@ const MyCourses = () => {
                 </Header>
                 <Main>
                     <h1 className="inner-content-padding-sm-btm">My Courses</h1>
-                    <p className="inner-content-padding-sm-btm">Completed courses and training in the most recent years 👩🏽‍💻📖</p>
+                    <p className="inner-content-padding-sm-btm">
+                        Completed courses and training in the most recent years
+                        👩🏽‍💻📖
+                    </p>
 
                     <CoursesContainer>
                         {listOfCourses.map((course, index) => (
@@ -85,7 +83,9 @@ const MyCourses = () => {
                                 <CourseDescription>
                                     {course.description}
                                 </CourseDescription>
-                                <CourseLecturer>{course.lecturer}</CourseLecturer>
+                                <CourseLecturer>
+                                    {course.lecturer}
+                                </CourseLecturer>
                             </CourseItem>
                         ))}
                     </CoursesContainer>

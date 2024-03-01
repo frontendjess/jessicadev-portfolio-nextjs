@@ -123,7 +123,13 @@ const About = () => {
                                     Medium page
                                 </a>
                             </Link>
-                            . I went to school for business and business adminstration and a 2 year front-end development degree from Noroff Oslo. You can also find a list of <Link href="/mycourses"><a>my completed courses</a></Link> in the most recent years.
+                            . I went to school for business and business
+                            adminstration and a 2 year front-end development
+                            degree from Noroff Oslo. You can also find a list of{' '}
+                            <Link href="/mycourses">
+                                <a>my completed courses</a>
+                            </Link>{' '}
+                            in the most recent years.
                         </p>
                         <p className="inner-content-padding-sm-btm">
                             Engaging with the tech community and fostering
