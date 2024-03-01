@@ -79,7 +79,7 @@ const RecentWork = () => {
 
                         <Link href="/projects/4">
                             <a className="project-link">
-                                02.{' '}
+                                03.{' '}
                                 <span className="project-type-text">
                                     [ Development ]
                                 </span>{' '}
