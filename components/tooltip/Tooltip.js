@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 const TooltipContainer = styled.span`
     visibility: hidden;
     width: auto;
-    max-width: 22vw;
+    max-width: 90vw;
     background-color: var(--color-black);
     color: var(--color-white);
     text-align: center;
@@ -11,35 +12,43 @@ const TooltipContainer = styled.span`
     border-radius: 6px;
     position: absolute;
     font-family: var(--font-body);
-    font-size: ${props => props.fontSize === 'small' ? '0.8rem' : (props.fontSize || 'var(--font-size)')};
+    font-size: ${(props) =>
+        props.fontSize === 'small'
+            ? '0.8rem'
+            : props.fontSize || 'var(--font-size)'};
     z-index: 1;
 
-    ${props => {
+    ${(props) => {
         switch (props.tooltipAlign) {
-          case 'right':
-            return `
+            case 'right':
+                return `
               right: 0%;
               top: 50%;
               transform: translateY(-50%);
               margin-right: 8px;
-            `;
-          case 'below':
-            return `
+            `
+            case 'below':
+                return `
               top: 100%;
               left: 50%;
               transform: translateX(-50%);
               margin-top: 8px;
-            `;
-          default:
-            return `
+            `
+            default:
+                return `
                 bottom: 90%;
                 left: 50%;
                 transform: translateX(-50%);
-            `; 
+            `
         }
-      }}
+    }}
 
-    margin-left: ${props => props.marginLeft === 'filter' ? '-60px' : (props.marginLeft || '0')};
+    margin-left: ${(props) =>
+        props.marginLeft === 'filter' ? '-60px' : props.marginLeft || '0'};
+
+    ${media.greaterThan('medium')`
+        max-width: 22vw;
+    `}
 `
 
 const TooltipWrapper = styled.div`
@@ -58,7 +67,13 @@ const Tooltip = ({ children, text, fontSize, marginLeft, tooltipAlign }) => {
     return (
         <TooltipWrapper>
             {children}
-            <TooltipContainer fontSize={fontSize} marginLeft={marginLeft} tooltipAlign={tooltipAlign}>{text}</TooltipContainer>
+            <TooltipContainer
+                fontSize={fontSize}
+                marginLeft={marginLeft}
+                tooltipAlign={tooltipAlign}
+            >
+                {text}
+            </TooltipContainer>
         </TooltipWrapper>
     )
 }

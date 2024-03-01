@@ -94,7 +94,10 @@ export default function Projects() {
                 </Header>
                 <Main>
                     <ProjectsHeading id="Topofpage">
-                        <Tooltip text="Not all my professional projects are included on my works list, such as the flooring service pilot project for Coop Obs Bygg - please refer to my linkedIn or email me for a full CV 💌" tooltipAlign="right">   
+                        <Tooltip
+                            text="Not all my professional projects are included on my works list, such as the flooring service pilot project for Coop Obs Bygg - please refer to my linkedIn or email me for a full CV 💌"
+                            tooltipAlign="right"
+                        >
                             <h1>ALL WORKS</h1>
                         </Tooltip>
                     </ProjectsHeading>
