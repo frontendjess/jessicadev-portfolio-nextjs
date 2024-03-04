@@ -191,6 +191,12 @@ export default function Project({ projectData }) {
     )
 }
 
+function isValidPid(pid) {
+    const parsedPid = parseInt(pid, 10);
+    console.log(pid)
+    return !isNaN(parsedPid) && parsedPid.toString() === pid; 
+}
+
 export async function getStaticPaths() {
     // Return a list of possible value for id
     const paths = listOfProjects.map((project) => {
@@ -204,11 +210,23 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    // Fetch necessary data for the blog post using params.id
+    if (!isValidPid(params.pid)) {
+        return {
+            notFound: true,
+        }
+    }
+
+    // Fetch necessary data for the project list using params.pid
     const projectData = getProjectData(params.pid)
+    if (!projectData) {
+        return {
+            notFound: true,
+        };
+    }
     return { props: { projectData } }
 }
 
 function getProjectData(pid) {
+    const id = parseInt(pid, 10);
     return listOfProjects.find((project) => project.pid === pid)
 }
