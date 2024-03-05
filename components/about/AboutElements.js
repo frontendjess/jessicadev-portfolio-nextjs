@@ -52,7 +52,7 @@ const AboutMeDreamBigText = styled.div`
 	`}
 
 	${media.lessThan('small')`
-		font-size: 32px;
+		font-size: 8vw;
 	`}
 `
 

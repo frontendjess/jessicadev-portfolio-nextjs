@@ -242,6 +242,15 @@ const GlobalStyle = createGlobalStyle`
 
     .link {
         cursor: pointer;
+        font-family: var(--font-headings);
+        text-decoration: none;
+        color: var(--color-black);
+
+
+        &:hover {
+        background-color: var(--color-black);
+        color: var(--color-white);
+        }
     }
 
     .project-link {

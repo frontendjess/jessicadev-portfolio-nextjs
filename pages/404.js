@@ -33,13 +33,16 @@ export default function Custom404() {
                 <Main id="Topofpage">
                     <div className="inner-content-flex-row">
                         <h1>404 - Page Not Found</h1>
-                        <p>Oops! The page you&apos;re looking for doesn&apos;t seem to exist.</p>                
-                            <Link href="/">
-                                <a className="projects-text-link-secondary" >Go back home</a>
-                            </Link>
+                        <p>
+                            Oops! The page you&apos;re looking for doesn&apos;t
+                            seem to exist.
+                        </p>
+                        <Link className="projects-text-link-secondary" href="/">
+                            Go back home
+                        </Link>
                     </div>
                 </Main>
             </Body>
         </>
     )
-  }
+}
