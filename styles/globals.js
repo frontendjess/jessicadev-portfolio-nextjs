@@ -150,7 +150,6 @@ const GlobalStyle = createGlobalStyle`
         `}
     }
 
-
     .bold {
         font-weight: var(--font-weight-bold);
     }
@@ -208,6 +207,12 @@ const GlobalStyle = createGlobalStyle`
             flex-direction: row;
             gap: 32px;
         `}
+    }
+
+    .inner-content-flex-row {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 
     .inner-content-grid {
