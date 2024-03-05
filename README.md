@@ -8,7 +8,9 @@ Live website (for school submission): https://jessicadevportfolio.netlify.app/
 
 ## Description
 
-This personal portfolio was a course assignment for school, and our brief was to document 3 prior submissions from our final school year. I did this on top of my original personal portfolio that I had created for school as well in January 2022 where you can also see a select view other case works I have done.
+This personal portfolio was a course assignment for school, and our brief was to document 3 prior submissions from our final school year. I did this on top of my original personal portfolio that I had created for school as well in January 2022 where you can also see a select view other case works I have done. 
+
+Update: I have upgraded Next version from 12 to 14 post project delivery and now in 2024. :) Also new portfolio website url is https://jessicawarr.com - hosted via vercel. 🫶🏽
 
 ## Built With
 
