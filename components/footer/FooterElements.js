@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styled from 'styled-components'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -167,16 +168,14 @@ const WorkWithMe = () => {
     const marqueeItems = Array.from({ length: 8 }, (_, index) => (
         <div className="marquee-title" key={index}>
             <span className="marquee-font"> WORK WITH ME </span>
-            <Image src="/images/star.png" alt="star" width={100} height={100} />
+            <img src="/images/star.png" alt="star" />
         </div>
     ))
 
     return (
-        <>
             <div className="marquee">
                 <div className="marquee-wrapper">{marqueeItems}</div>
             </div>
-        </>
     )
 }
 
