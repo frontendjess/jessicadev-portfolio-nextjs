@@ -33,16 +33,13 @@ const RecentWork = () => {
                             alt="Client work mockup"
                         />
 
-                        <Link href="/projects/1">
-                            <a className="project-link">
-                                01.{' '}
-                                <span className="project-type-text">
-                                    [ Development ]
-                                </span>{' '}
-                                Bane NOR Wiki & Portals - HTML + SCSS +
-                                JavaScript / TypeScript + Optimizely / Razor C#
-                                Website
-                            </a>
+                        <Link className="project-link" href="/projects/1">
+                            01.{' '}
+                            <span className="project-type-text">
+                                [ Development ]
+                            </span>{' '}
+                            Bane NOR Wiki & Portals - HTML + SCSS + JavaScript /
+                            TypeScript + Optimizely / Razor C# Website
                         </Link>
                     </RecentWorkDetails>
                 </div>
@@ -55,16 +52,14 @@ const RecentWork = () => {
                             alt="Client work mockup"
                         />
 
-                        <Link href="/projects/2">
-                            <a className="project-link">
-                                02.{' '}
-                                <span className="project-type-text">
-                                    [ Development ]
-                                </span>{' '}
-                                Bama Gruppen Transportation Optimization -
-                                Next.Js + Storybook + Tailwind + GraphQL +
-                                Apollo + TurboRepo Web Application
-                            </a>
+                        <Link className="project-link" href="/projects/2">
+                            02.{' '}
+                            <span className="project-type-text">
+                                [ Development ]
+                            </span>{' '}
+                            Bama Gruppen Transportation Optimization - Next.Js +
+                            Storybook + Tailwind + GraphQL + Apollo + TurboRepo
+                            Web Application
                         </Link>
                     </RecentWorkDetails>
                 </div>
@@ -77,15 +72,13 @@ const RecentWork = () => {
                             alt="Client work mockup"
                         />
 
-                        <Link href="/projects/4">
-                            <a className="project-link">
-                                03.{' '}
-                                <span className="project-type-text">
-                                    [ Development ]
-                                </span>{' '}
-                                Øya X Fretex - Next.js + Tailwind + Framer
-                                Motion Website
-                            </a>
+                        <Link className="project-link" href="/projects/4">
+                            03.{' '}
+                            <span className="project-type-text">
+                                [ Development ]
+                            </span>{' '}
+                            Øya X Fretex - Next.js + Tailwind + Framer Motion
+                            Website
                         </Link>
                     </RecentWorkDetails>
                 </div>
@@ -96,20 +89,21 @@ const RecentWork = () => {
                             <p>WANT TO SEE MORE?</p>
                         </div>
                         <div className="inner-content-padding-btm">
-                            <Link href="/projects">
-                                <a className="projects-text-link-secondary">
-                                    View all works and projects
-                                </a>
+                            <Link
+                                className="projects-text-link-secondary"
+                                href="/projects"
+                            >
+                                View all works and projects
                             </Link>
                         </div>
 
                         <div className="inner-content-padding-btm">
-                            <a
+                            <Link
                                 className="projects-text-link"
                                 href="mailto:iamjessicawarr@gmail.com"
                             >
                                 Or get in touch with me
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="projects-col projects-col-star">

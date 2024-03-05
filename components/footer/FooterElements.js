@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 import Link from 'next/link'
 import media from 'styled-media-query'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -41,7 +42,12 @@ const BuildMagicTogether = () => {
                 some magic together
             </BuildMagicTogetherText>
             <IconArrow>
-                <img src="/images/icon-arrow-down-left.svg" alt="arrow" />
+                <Image
+                    src="/images/icon-arrow-down-left.svg"
+                    alt="arrow"
+                    width={169}
+                    height={169}
+                />
             </IconArrow>
         </div>
     )
@@ -84,6 +90,7 @@ const FooterAboutText = styled.div`
 
 const FooterBtmCol = styled.div`
     flex: 0 0 50%;
+    font-size: 24px;
 
     a {
         font-family: var(--font-body);
@@ -105,17 +112,17 @@ const FooterCTA = () => {
                 <FooterCol>
                     <div className="inner-content-padding-sm-btm">
                         <Link href="mailto:iamjessicawarr@gmail.com">
-                            <a>EMAIL</a>
+                            EMAIL
                         </Link>
                     </div>
                     <div className="inner-content-padding-sm-btm">
                         <Link href="https://linkedin.com/in/jessica-dev">
-                            <a>LINKEDIN</a>
+                            LINKEDIN
                         </Link>
                     </div>
                     <div>
                         <Link href="https://github.com/frontendjess">
-                            <a>GITHUB</a>
+                            GITHUB
                         </Link>
                     </div>
                 </FooterCol>
@@ -145,10 +152,7 @@ const FooterBottom = () => {
             <FooterRow>
                 <FooterBtmCol>
                     <Link href="#Topofpage">
-                        <a>
-                            Back to top{' '}
-                            <FontAwesomeIcon icon={faLongArrowAltUp} />
-                        </a>
+                        Back to top <FontAwesomeIcon icon={faLongArrowAltUp} />
                     </Link>
                 </FooterBtmCol>
                 <FooterBtmCol>
@@ -160,43 +164,17 @@ const FooterBottom = () => {
 }
 
 const WorkWithMe = () => {
+    const marqueeItems = Array.from({ length: 8 }, (_, index) => (
+        <div className="marquee-title" key={index}>
+            <span className="marquee-font"> WORK WITH ME </span>
+            <Image src="/images/star.png" alt="star" width={100} height={100} />
+        </div>
+    ))
+
     return (
         <>
             <div className="marquee">
-                <div className="marquee-wrapper">
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                    <div className="marquee-title">
-                        <span className="marquee-font"> WORK WITH ME </span>
-                        <img src="/images/star.png" alt="star" />
-                    </div>
-                </div>
+                <div className="marquee-wrapper">{marqueeItems}</div>
             </div>
         </>
     )

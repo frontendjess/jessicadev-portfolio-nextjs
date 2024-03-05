@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 import Body from '../../components/body/Body'
 import Header from '../../components/header/Header'
@@ -76,14 +77,13 @@ export default function Project({ projectData }) {
                                         Live website:
                                     </span>{' '}
                                     {projectData.url ? (
-                                        <Link href={projectData.url}>
-                                            <a
-                                                className="specific-projects-link"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                Visit the project website/demo
-                                            </a>
+                                        <Link
+                                            className="specific-projects-link"
+                                            href={projectData.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            Visit the project website/demo
                                         </Link>
                                     ) : projectData.isInternal ? (
                                         <span>
@@ -127,10 +127,11 @@ export default function Project({ projectData }) {
                                     {(() => {
                                         if (projectData.repo) {
                                             return (
-                                                <Link href={projectData.repo}>
-                                                    <a className="specific-projects-link">
-                                                        {projectData.repo}
-                                                    </a>
+                                                <Link
+                                                    className="specific-projects-link"
+                                                    href={projectData.repo}
+                                                >
+                                                    {projectData.repo}
                                                 </Link>
                                             )
                                         } else {
@@ -150,9 +151,12 @@ export default function Project({ projectData }) {
                         <div className="section">
                             {' '}
                             <ImageWrapper>
-                                <img
+                                <Image
                                     src={projectData.featuredImage}
                                     alt={projectData.title}
+                                    width={1728}
+                                    height={1117}
+                                    layout="responsive"
                                 />
                             </ImageWrapper>
                         </div>
@@ -175,9 +179,12 @@ export default function Project({ projectData }) {
                         {projectData.gallery.map((galleryImage, index) => (
                             <div key={index} className="section">
                                 <ImageWrapper>
-                                    <img
+                                    <Image
                                         src={galleryImage.link}
                                         alt={projectData.title}
+                                        width={1728}
+                                        height={1117}
+                                        layout="responsive"
                                     />
                                 </ImageWrapper>
                             </div>
@@ -192,9 +199,9 @@ export default function Project({ projectData }) {
 }
 
 function isValidPid(pid) {
-    const parsedPid = parseInt(pid, 10);
+    const parsedPid = parseInt(pid, 10)
     console.log(pid)
-    return !isNaN(parsedPid) && parsedPid.toString() === pid; 
+    return !isNaN(parsedPid) && parsedPid.toString() === pid
 }
 
 export async function getStaticPaths() {
@@ -221,12 +228,12 @@ export async function getStaticProps({ params }) {
     if (!projectData) {
         return {
             notFound: true,
-        };
+        }
     }
     return { props: { projectData } }
 }
 
 function getProjectData(pid) {
-    const id = parseInt(pid, 10);
+    const id = parseInt(pid, 10)
     return listOfProjects.find((project) => project.pid === pid)
 }

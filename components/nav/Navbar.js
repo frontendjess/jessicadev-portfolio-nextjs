@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import FaBarsIcon from './FaBarsIcon'
 import { Navlinks, NavLink, Logo, MobileIcon } from './NavbarElements'
@@ -8,13 +9,8 @@ const Navbar = ({ toggle }) => {
             <div>
                 <Logo>
                     {' '}
-                    <Link href="/">
-                        <a className="logo-link">
-                            <img
-                                src="/images/logo.svg"
-                                alt="Jesscicadev logo"
-                            />
-                        </a>
+                    <Link className="logo-link" href="/">
+                        <img src="/images/logo.svg" alt="Jesscicawarr logo" />
                     </Link>
                 </Logo>
             </div>
@@ -24,24 +20,23 @@ const Navbar = ({ toggle }) => {
             <Navlinks>
                 <NavLink>
                     <Link className="nav-link" href="/#Header">
-                        <a>Home</a>
+                        Home
                     </Link>
                 </NavLink>
                 <NavLink>
                     <Link className="nav-link" href="/#About">
-                        <a>About</a>
+                        About
                     </Link>
                 </NavLink>
                 <NavLink>
                     <Link className="nav-link" href="/projects">
-                        <a>Works</a>
+                        Works
                     </Link>
                 </NavLink>
                 <NavLink>
                     <Link
                         className="nav-link"
                         href="mailto:iamjessicawarr@gmail.com"
-                        passHref
                     >
                         <img
                             className="navbar-email-icon"

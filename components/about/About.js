@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import {
     AboutMeDreamBigContainer,
     AboutMeTextContainer,
@@ -27,7 +28,12 @@ const About = () => {
                     <AboutMeInspoText>
                         <p>THE INSPIRATION AND MOTIVATION BEHIND JESSICA</p>
                         <PinkStar>
-                            <img src="/images/star.png" alt="star graphic" />
+                            <Image
+                                src="/images/star.png"
+                                alt="star graphic"
+                                width={100}
+                                height={100}
+                            />
                         </PinkStar>
                     </AboutMeInspoText>
                 </AboutMeTextContainer>
@@ -43,10 +49,12 @@ const About = () => {
                     <AboutMeText>
                         <h5 className="inner-content-padding-sm-btm">
                             At{' '}
-                            <Link href="https://noaignite.no">
-                                <a target="_blank" rel="noopener noreferrer">
-                                    Noa Ignite Norway
-                                </a>
+                            <Link
+                                href="https://noaignite.no"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Noa Ignite Norway
                             </Link>
                             , my role as a front-end developer transcends code
                             craftsmanship — it&apos;s about bringing ideas to
@@ -115,20 +123,20 @@ const About = () => {
                             visual designs. For a full view of my professional
                             journey or to delve into my technical writings,{' '}
                             <Link href="mailto:iamjessicawarr@gmail.com">
-                                <a>reach out to me</a>
+                                reach out to me
                             </Link>{' '}
                             for my CV or visit my{' '}
-                            <Link href="https://medium.com/@jessicadev.com">
-                                <a target="_blank" rel="noopener noreferrer">
-                                    Medium page
-                                </a>
+                            <Link
+                                href="https://medium.com/@jessicadev.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Medium page
                             </Link>
                             . I went to school for business and business
                             adminstration and a 2 year front-end development
                             degree from Noroff Oslo. You can also find a list of{' '}
-                            <Link href="/mycourses">
-                                <a>my completed courses</a>
-                            </Link>{' '}
+                            <Link href="/mycourses">my completed courses</Link>{' '}
                             in the most recent years.
                         </p>
                         <p className="inner-content-padding-sm-btm">
@@ -168,111 +176,111 @@ const About = () => {
                         <div className="inner-content-flex">
                             <p className="bold">Front-End Development</p>
                             <p className="inner-content-flex">
-                                <p>
+                                <span>
                                     Proficient in modern JavaScript frameworks
                                     and libraries: React, Next.js, and Svelte.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Skilled in TypeScript for robust, type-safe
                                     code.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Creating responsive, mobile-first interfaces
                                     with Tailwind CSS, SCSS, Styled-Components /
                                     Emotion.
-                                </p>
+                                </span>
                             </p>
                         </div>
 
                         <div className="inner-content-flex">
                             <p className="bold">Back-End Integration</p>
                             <p className="inner-content-flex">
-                                <p>
+                                <span>
                                     Implementing headless CMS solutions like
                                     Sanity and Strapi for dynamic content
                                     management.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Expertise in API integration with Axios and
                                     GraphQL for seamless data handling.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Managing application state efficiently with
                                     Redux and Apollo Client.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Configuring real-time databases and
                                     authentication with Supabase.
-                                </p>
+                                </span>
                             </p>
                         </div>
 
                         <div className="inner-content-flex">
                             <p className="bold">User Experience & Design</p>
                             <p className="inner-content-flex">
-                                <p>
+                                <span>
                                     Committed to Web Accessibility (WCAG) to
                                     create inclusive web experiences.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Leveraging Framer Motion for engaging UI
                                     animations.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Crafting user-centric interfaces with
                                     attention to UX Design principles.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Employing Atomic Design principles to build
                                     scalable and maintainable design systems.
-                                </p>
+                                </span>
                             </p>
                         </div>
 
                         <div className="inner-content-flex">
                             <p className="bold">Additional Skills</p>
                             <p className="inner-content-flex">
-                                <p>
+                                <span>
                                     Continuously expanding my skill set and
                                     embracing the latest industry trends.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Streamlining authentication flows with
                                     NextAuth.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Ensuring robust front-end functionality with
                                     Material UI components.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Automating workflows and integrating
                                     continuous integration/continuous deployment
                                     (CI/CD) with GitHub Actions.
-                                </p>
+                                </span>
                             </p>
                         </div>
 
                         <div className="inner-content-flex">
                             <p className="bold">Process & Methodology</p>
                             <p className="inner-content-flex">
-                                <p>
+                                <span>
                                     Agile development savvy, emphasizing quick
                                     iterations, adaptability, and continual
                                     enhancement.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Expert in responsive design for seamless
                                     viewing on any device.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Skilled in Git for streamlined version
                                     control and team collaboration.
-                                </p>
-                                <p>
+                                </span>
+                                <span>
                                     Committed to website performance
                                     optimization for superior user engagement
                                     and SEO.
-                                </p>
+                                </span>
                             </p>
                         </div>
 
@@ -305,19 +313,23 @@ const About = () => {
                         <p className="inner-content-padding-sm-btm">
                             Let&apos;s{' '}
                             <Link href="mailto:iamjessicawarr@gmail.com">
-                                <a> Connect</a>
+                                Connect
                             </Link>{' '}
                             |{' '}
-                            <Link href="https://www.linkedin.com/in/jessica-dev/">
-                                <a target="_blank" rel="noopener noreferrer">
-                                    LinkedIn
-                                </a>
+                            <Link
+                                href="https://www.linkedin.com/in/jessica-dev/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
                             </Link>{' '}
                             |{' '}
-                            <Link href="https://medium.com/@jessicadev.com">
-                                <a target="_blank" rel="noopener noreferrer">
-                                    Medium
-                                </a>
+                            <Link
+                                href="https://medium.com/@jessicadev.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Medium
                             </Link>
                         </p>
 
@@ -326,7 +338,7 @@ const About = () => {
                             portfolio may not be always up to date so feel free
                             to{' '}
                             <Link href="mailto:iamjessicawarr@gmail.com">
-                                <a>email me</a>
+                                email me
                             </Link>{' '}
                             for an updated CV and project references.
                         </p>

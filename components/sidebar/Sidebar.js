@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                             isOpen={isOpen}
                             onClick={toggle}
                         >
-                            <a>Home</a>
+                            Home
                         </Link>
                     </SidebarLink>
                     <SidebarLink>
@@ -33,7 +33,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                             isOpen={isOpen}
                             onClick={toggle}
                         >
-                            <a>About</a>
+                            About
                         </Link>
                     </SidebarLink>
                     <SidebarLink>
@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                             isOpen={isOpen}
                             onClick={toggle}
                         >
-                            <a>Works</a>
+                            Works
                         </Link>
                     </SidebarLink>
                     <SidebarLink>

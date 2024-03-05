@@ -164,10 +164,11 @@ export default function Projects() {
                                         </span>
                                     ))}
                                 </div>
-                                <Link href={`/projects/${project.pid}`}>
-                                    <a className="all-projects-link">
-                                        View Project Case
-                                    </a>
+                                <Link
+                                    className="all-projects-link"
+                                    href={`/projects/${project.pid}`}
+                                >
+                                    View Project Case
                                 </Link>
                             </div>
                         ))}

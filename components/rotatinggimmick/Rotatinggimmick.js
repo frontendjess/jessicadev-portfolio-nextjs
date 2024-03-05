@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled, { keyframes } from 'styled-components'
 import media from 'styled-media-query'
 
@@ -56,9 +57,9 @@ const Rotatinggimmick = () => {
                 <img src="/images/outercircle.png" alt="work with me" />
             </OuterCircle>
             <InnerCircle>
-                <a href="mailto:iamjessicawarr@gmail.com">
+                <Link href="mailto:iamjessicawarr@gmail.com">
                     <img src="/images/innercircle.png" alt="email" />
-                </a>
+                </Link>
             </InnerCircle>
         </Container>
     )

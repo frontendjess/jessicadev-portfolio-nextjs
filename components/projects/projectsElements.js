@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const GoBackContainer = styled.div`
     display: flex;
@@ -15,20 +16,25 @@ const GoBackCol1 = styled.div`
 const GoBackCol2 = styled.div`
     flex: 0 0 50%;
 
-    h3 {
-        text-transform: uppercase;
+    a {
+        cursor: pointer;
+        color: var(--color-black);
         font-family: var(--font-headings);
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
         font-size: var(--h3-size);
         letter-spacing: var(--letter-spacing-xl);
         line-height: var(--line-height-xl);
-    }
 
-    a {
-        cursor: pointer;
+        &:hover {
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
     }
 
     ${media.lessThan('medium')`
-        h3 {
+        a {
             font-size: var(--h4-size);
             letter-spacing: var(--letter-spacing-lg);
             line-height: var(--line-height-lg);
@@ -127,16 +133,17 @@ const GoBack = () => {
         <div className="section-padding-top">
             <GoBackContainer>
                 <GoBackCol1>
-                    <img
+                    <Image
                         src="../images/icon-go-back.svg"
                         alt="go back arrow icon"
+                        width={164}
+                        height={164}
+                        layout="responsive"
                     />
                 </GoBackCol1>
                 <GoBackCol2>
-                    <Link href="/projects" passHref>
-                        <h3>
-                            <a>Go back to all works & projects</a>
-                        </h3>
+                    <Link href="/projects" legacyBehavior>
+                        <a>Go back to all works & projects</a>
                     </Link>
                 </GoBackCol2>
             </GoBackContainer>
