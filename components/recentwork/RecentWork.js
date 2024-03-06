@@ -114,7 +114,12 @@ const RecentWork = () => {
                         </div>
                     </div>
                     <div className="projects-col projects-col-star">
-                        <Image src="/images/star.png" alt="star graphic" width={100} height={100} />
+                        <Image
+                            src="/images/star.png"
+                            alt="star graphic"
+                            width={100}
+                            height={100}
+                        />
                     </div>
                 </div>
             </Section>

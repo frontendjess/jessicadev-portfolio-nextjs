@@ -147,7 +147,7 @@ export default function Projects() {
                     <div className="section all-projects-container">
                         {filteredProjects.map((project) => (
                             <div className="all-projects-col" key={project.pid}>
-                                <Image 
+                                <Image
                                     src={project.featuredImage}
                                     alt="projects image"
                                     width={1728}
