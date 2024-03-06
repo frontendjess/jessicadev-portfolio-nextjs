@@ -15,6 +15,8 @@ import Link from 'next/link'
 
 import listOfProjects from '../../libs/projectData'
 import Tooltip from '../../components/tooltip/Tooltip'
+import Customhead from '../../components/customhead/CustomHead'
+import CustomHead from '../../components/customhead/CustomHead'
 
 const ProjectsHeading = styled.div`
     display: flex;
@@ -79,14 +81,7 @@ export default function Projects() {
 
     return (
         <>
-            <Head>
-                <title>Jessica Warr Portfolio Website</title>
-                <meta
-                    name="description"
-                    content="Jessicawarr.com Portfolio Website"
-                />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <CustomHead title="Jessicawarr.com Portfolio Website - All Works" />
 
             <Body>
                 <Header>

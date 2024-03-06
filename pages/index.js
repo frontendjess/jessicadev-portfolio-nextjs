@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import CustomHead from '../components/customhead/CustomHead'
 
 import About from '../components/about/About'
 import Body from '../components/body/Body'
@@ -21,14 +21,7 @@ export default function Home() {
 
     return (
         <>
-            <Head>
-                <title>Jessica Warr Portfolio Website</title>
-                <meta
-                    name="description"
-                    content="Jessicawarr.com Portfolio Website"
-                />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <CustomHead title="Jessicawarr.com Portfolio Website" />
 
             <Body>
                 <Header>
