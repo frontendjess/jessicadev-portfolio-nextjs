@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Body from '../../components/body/Body'
 import Header from '../../components/header/Header'
 import Navbar from '../../components/nav/Navbar'
+import Footer from '../../components/footer/Footer'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Main from '../../components/main/Main'
 import styled from 'styled-components'
@@ -10,7 +11,7 @@ import media from 'styled-media-query'
 import { useState } from 'react'
 
 const CoursesContainer = styled.div`
-    padding: 2rem;
+    padding: 32px 0 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +91,7 @@ const MyCourses = () => {
                         ))}
                     </CoursesContainer>
                 </Main>
+                <Footer id="Footer" />
             </Body>
         </>
     )
