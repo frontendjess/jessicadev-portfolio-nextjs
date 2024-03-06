@@ -48,7 +48,7 @@ const RecentWork = () => {
                     <RecentWorkDetails>
                         <img
                             className="mockup-image"
-                            src="/images/selectedworks/bama-gruppen-mockup.png"
+                            src="/images/selectedworks/bama-mockup.png"
                             alt="Client work mockup"
                         />
 
