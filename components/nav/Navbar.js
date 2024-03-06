@@ -10,7 +10,7 @@ const Navbar = ({ toggle }) => {
                 <Logo>
                     {' '}
                     <Link className="logo-link" href="/">
-                        <img src="/images/logo.svg" alt="Jesscicawarr logo" />
+                        <img src="/images/logo.svg" alt="Jessicawarr logo" />
                     </Link>
                 </Logo>
             </div>

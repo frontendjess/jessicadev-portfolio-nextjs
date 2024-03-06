@@ -45,7 +45,7 @@ const listOfProjects = [
         ],
         url: '',
         repo: '',
-        featuredImage: '/images/featuredimage/project-bama-gruppen.png',
+        featuredImage: '/images/featuredimage/project-bama.png',
         gallery: [],
         statusComplete: true,
         objectivesCap:

@@ -173,9 +173,9 @@ const WorkWithMe = () => {
     ))
 
     return (
-            <div className="marquee">
-                <div className="marquee-wrapper">{marqueeItems}</div>
-            </div>
+        <div className="marquee">
+            <div className="marquee-wrapper">{marqueeItems}</div>
+        </div>
     )
 }
 
