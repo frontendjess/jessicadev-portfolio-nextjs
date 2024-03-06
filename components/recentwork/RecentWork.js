@@ -34,6 +34,7 @@ const RecentWork = () => {
                             alt="Client work mockup"
                             width={1728}
                             height={1117}
+                            layout="responsive"
                         />
 
                         <Link className="project-link" href="/projects/1">
@@ -55,6 +56,7 @@ const RecentWork = () => {
                             alt="Client work mockup"
                             width={1728}
                             height={1117}
+                            layout="responsive"
                         />
 
                         <Link className="project-link" href="/projects/2">
@@ -77,6 +79,7 @@ const RecentWork = () => {
                             alt="Client work mockup"
                             width={1728}
                             height={1117}
+                            layout="responsive"
                         />
 
                         <Link className="project-link" href="/projects/4">
