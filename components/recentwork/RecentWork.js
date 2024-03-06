@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 import media from 'styled-media-query'
+import Image from 'next/image'
 
 const RecentWorkTitle = () => {
     return <p>SELECTED MOST RECENT WORK</p>
@@ -27,10 +28,12 @@ const RecentWork = () => {
                 <RecentWorkTitle />
                 <div className="inner-content-padding">
                     <RecentWorkDetails>
-                        <img
+                        <Image
                             className="mockup-image"
                             src="/images/selectedworks/banenor-mockup.png"
                             alt="Client work mockup"
+                            width={1728}
+                            height={1117}
                         />
 
                         <Link className="project-link" href="/projects/1">
@@ -46,10 +49,12 @@ const RecentWork = () => {
 
                 <div className="inner-content-padding">
                     <RecentWorkDetails>
-                        <img
+                        <Image
                             className="mockup-image"
                             src="/images/selectedworks/bama-mockup.png"
                             alt="Client work mockup"
+                            width={1728}
+                            height={1117}
                         />
 
                         <Link className="project-link" href="/projects/2">
@@ -66,10 +71,12 @@ const RecentWork = () => {
 
                 <div className="inner-content-padding">
                     <RecentWorkDetails>
-                        <img
+                        <Image
                             className="mockup-image"
                             src="/images/selectedworks/oyaxfretex-mockup.png"
                             alt="Client work mockup"
+                            width={1728}
+                            height={1117}
                         />
 
                         <Link className="project-link" href="/projects/4">
@@ -107,7 +114,7 @@ const RecentWork = () => {
                         </div>
                     </div>
                     <div className="projects-col projects-col-star">
-                        <img src="/images/star.png" alt="star graphic" />
+                        <Image src="/images/star.png" alt="star graphic" width={100} height={100} />
                     </div>
                 </div>
             </Section>

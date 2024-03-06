@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 import media from 'styled-media-query'
+import Image from 'next/image'
 
 import Body from '../../components/body/Body'
 import Header from '../../components/header/Header'
@@ -146,9 +147,12 @@ export default function Projects() {
                     <div className="section all-projects-container">
                         {filteredProjects.map((project) => (
                             <div className="all-projects-col" key={project.pid}>
-                                <img
+                                <Image 
                                     src={project.featuredImage}
                                     alt="projects image"
+                                    width={1728}
+                                    height={1117}
+                                    layout="responsive"
                                 />
                                 <p className="all-projects-title">
                                     {project.title}
