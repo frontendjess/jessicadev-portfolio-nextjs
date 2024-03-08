@@ -38,11 +38,11 @@ const AboutMeDreamBigText = styled.div`
     text-shadow: 3px 3px 3px var(--color-tertiary);
 
     ${media.between('large', 'huge')`
-		font-size: 67px;
+		font-size: 5vw;
 	`}
 
     ${media.between('medium', 'large')`
-		font-size: 67px;
+		font-size: 6vw;
 		flex: 0 1 60%;
 	`}
 
@@ -135,6 +135,7 @@ const AboutMeRowBtm = styled.div`
 const AboutMeTitle = styled.div`
     flex: 1 1 50%;
     padding-right: 50px;
+    z-index: 20;
 
     h3 {
         font-family: var(--font-headings);

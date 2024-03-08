@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import styled from 'styled-components'
+import media from 'styled-media-query'
+
 import {
     AboutMeDreamBigContainer,
     AboutMeTextContainer,
@@ -12,10 +15,55 @@ import {
     AboutMeText,
 } from './AboutElements'
 
+const FlowerGraphic = styled.img`
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 70%;
+    height: auto;
+    transition: transform 0.3s ease;
+    transform: translate(-50%, 50%);
+
+    &:hover {
+        transform: translate(-50%, 50%) scale(1.1);
+    }
+
+    ${media.greaterThan('medium')`
+        max-width: 50%;
+        transform: translate(-20%, 50%);
+    
+        &:hover {
+            transform: translate(-20%, 50%) scale(1.1); 
+        }
+    `}
+
+    ${media.greaterThan('large')`
+        max-width: 30%;
+        transform: translate(-20%, 50%);
+    
+        &:hover {
+            transform: translate(-20%, 50%) scale(1.1); 
+        }
+    `}
+
+    ${media.greaterThan('huge')`
+        max-width: fit-content;
+        transform: translate(-70%, 50%);
+
+        &:hover {
+            transform: translate(-70%, 50%) scale(1.1); 
+        }
+    `}
+`
+
 const About = () => {
     return (
         <>
             <AboutMeDreamBigContainer>
+                <FlowerGraphic
+                    src="/images/flowergraphic.png"
+                    alt="Flower Graphic"
+                />
                 <AboutMeTextContainer>
                     <AboutMeDreamBigText>
                         <h2>
