@@ -135,7 +135,7 @@ const AboutMeRowBtm = styled.div`
 const AboutMeTitle = styled.div`
     flex: 1 1 50%;
     padding-right: 50px;
-    z-index: 20;
+    z-index: 2;
 
     h3 {
         font-family: var(--font-headings);
